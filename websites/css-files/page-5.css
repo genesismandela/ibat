@@ -1,55 +1,58 @@
 /* ==== Browser resets  ==== */
-img { display: block; width: 100%; height: auto }
-
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 /* Web page */
 body {
-    background-color: #FFFFBD;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-bottom:40px;
-    font-family: 'Merriweather', serif;
+  background-color: #ffffbd;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 40px;
+  font-family: "Merriweather", serif;
 }
 
 /* Main heading */
 h1 {
-    font-size: 84px;
-    font-weight: normal;
-    color: #3434B0;
-    letter-spacing: -2px;
-    text-align: center;
-    margin-bottom: 32px;
+  font-size: 84px;
+  font-weight: normal;
+  color: #3434b0;
+  letter-spacing: -2px;
+  text-align: center;
+  margin-bottom: 32px;
 }
 
 /* Small headings */
-h2 {   
-    font-size: 26px;
-    color:#3434B0;
-    line-height: 1.4;
-    margin-bottom: 4px;
+h2 {
+  font-size: 26px;
+  color: #3434b0;
+  line-height: 1.4;
+  margin-bottom: 4px;
 }
 
 /* Smaller headings */
-h3 {   
-    font-size: 42px;
-    color: #000;
-    letter-spacing:-2px;
-    margin-top: 56px;
-    margin-bottom: 2px;
+h3 {
+  font-size: 42px;
+  color: #000;
+  letter-spacing: -2px;
+  margin-top: 56px;
+  margin-bottom: 2px;
 }
 
 /* Text paragraphs */
 p {
-    font-size: 22px;
-    color: #455C80;
-    line-height: 1.6;
-    margin-top: 0;
-    margin-bottom: 22px;
+  font-size: 22px;
+  color: #455c80;
+  line-height: 1.6;
+  margin-top: 0;
+  margin-bottom: 22px;
 }
 
 /* Images */
-img { 
-    margin-bottom: 42px;
-    /* Drop shadow effect at right and bottom of image*/
-    box-shadow: 8px 10px 8px #888;    
+img {
+  margin-bottom: 42px;
+  /* Drop shadow effect at right and bottom of image*/
+  box-shadow: 8px 10px 8px #888;
 }

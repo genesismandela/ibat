@@ -5,7 +5,11 @@ body {
   background-color: antiquewhite;
 }
 
-h1, h2, h3 {color: brown;}
+h1,
+h2,
+h3 {
+  color: brown;
+}
 
 h1 {
   font-size: 72px;
@@ -18,7 +22,7 @@ h1 {
 
 h2 {
   font-size: 30px;
-  margin-bottom: 64px;     
+  margin-bottom: 64px;
   font-family: sans-serif;
   text-align: center;
   line-height: 1.4;

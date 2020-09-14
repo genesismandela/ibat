@@ -5,11 +5,15 @@ body {
   background-color: purple;
 }
 
-h1, h2, p {color: white;}
+h1,
+h2,
+p {
+  color: white;
+}
 
 h1 {
   font-size: 84px;
-  margin-bottom: 64px;    
+  margin-bottom: 64px;
   text-align: center;
   font-weight: normal;
   letter-spacing: 4px;
@@ -24,7 +28,7 @@ h2 {
 
 p {
   font-size: 20px;
-  margin-top: 0;    
+  margin-top: 0;
   font-family: sans-serif;
   line-height: 1.6;
 }
