@@ -1,0 +1,32 @@
+// COLOR VARIABLES
+$color-smooth-pink: #FBBDD9;
+$color-smooth-green: #B7F3D9;
+$color-smooth-purple: #8C6BBE;
+$color-smooth-purple-dark: #733fc0;
+$color-smooth-yellow: #F1F1BC;
+$color-smooth-red: #d1274b;
+$color-smooth-blue: #2F4F4F;
+
+// FONT VARIABLES
+$font-smooth: 'Neucha', sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-desktop: 75em; // 1200px
+$bp-tablet-land: 67.5em; // 1080px
+$bp-tablet: 48em; // 768px
+$bp-phone: 37.5em; // 600px
+
+// BROWSER RESET
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+    scroll-behavior: smooth;
+} 
