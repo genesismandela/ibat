@@ -1,8 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Browser Compatibility-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Hiding a web page from search engines-->
+  <!--<meta name="robots" content="noindex">-->
+  <!--Page Title-->
+  <title>Mandela Samboy / Four-column Flexbox Sample Web Page</title>
+  <!--Page Data-->
+  <meta name="description" content="A responsive four-column layout using CSS flexbox, with fluid text, images and coloured backgrounds."> 
+  <meta name="keywords" content="#">
+  <meta name="author" content="Mandela Samboy">
+  <!--Style Link-->
+  <link rel="stylesheet" href="flex-four-columns.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">     
+  <!--Icons/Features-->
+  <!--Google Analytics-->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159180375-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-159180375-1');
+  </script>
+</head>
     <title>Four-column Flexbox Sample Web Page</title>
 	<meta name="description" content="A responsive four-column layout using CSS flexbox, with fluid text, images and coloured backgrounds.">
 	
@@ -15,7 +42,7 @@
 <body>
 
 <!-- Parent container block with flexbox -->
-<div class="container-block container-flexbox">
+<div class="container-block container-flexbox bg-dark">
 
 	<div class="item-col-4">
 		<img src="sport-1.jpg" alt="sport">
@@ -58,14 +85,14 @@
         <p><a href="#">Read More &gt;</a></p>
 	</div>
 
-	<div class="item-col-4">
+	<div class="item-col-4 bg-dark">
 		<img src="sport-2.jpg" alt="sport">
 		<h3>Boardroom strife continues at Arsenal</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquame et interdum.</p>
         <p><a href="#">Read More &gt;</a></p>
 	</div>
 
-	<div class="item-col-4">
+	<div class="item-col-4 bg-dark item-col-padding">
 		<img src="sport-3.jpg" alt="sport">
 		<h3>Bohs struggle to find consistency</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquame et interdum.</p>

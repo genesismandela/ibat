@@ -6,22 +6,24 @@ img { width: 100%; height: auto; display: block }
 
 /* ========== MAIN CONTENT CONTAINERS ========= */
 /* Desktops */
-@media (min-width:768px) { .container-block {  } }
+@media (min-width:768px) { .container-block { padding: 4% 8%; } }
 
 /* Mobiles */
-@media (max-width:767px) { .container-block {  } }
+@media (max-width:767px) { .container-block { padding: 11% 8%; } }
 
 
 /* ========== FLEXBOX PARENT AND CHILD COLUMN ELEMENTS ========= */
 
 /* Flexbox parent container */
 .container-flexbox {
- 
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
 }
 
 /* Desktops: flexbox child columns */
 @media (min-width: 768px) {
-    .item-col-4 {  }
+    .item-col-4 { width: 22%; }
 }
 
 /* Mobiles: flexbox child columns */
@@ -34,13 +36,13 @@ img { width: 100%; height: auto; display: block }
 }
 
 /* Desktops: inner padding for child columns */
-@media (min-width: 768px) {
-    .item-col-4.item-col-padding { padding: 1.8% 2% 2.2% 2% }
+@media (min-width:768px) {
+    [class*="item-col-"].item-col-padding { padding: 1.8% 2% 2.2% 2% }
 }
 
 /* Mobiles: inner padding for child columns  */
-@media (max-width: 767px) {
-    .item-col-4.item-col-padding { padding: 6.5% 7% 7% 7% }
+@media (max-width:767px) {
+    [class*="item-col-"].item-col-padding { padding: 6.5% 7% 7% 7% }
 }
 
 
@@ -82,10 +84,5 @@ img { width: 100%; height: auto; display: block }
 
 
 /* Colours for sub-headings and paragraphs */
-
-
-
-/* Visual layout guides - remove when finished */
-.container-flexbox { border: red 1px solid }
-.container-flexbox .item-col-4 { border: blue 1px solid }
-
+.container-flexbox.bg-dark .item-col-4 * { color: #fff }
+.container-flexbox .item-col-4.bg-dark * { color: #fff }

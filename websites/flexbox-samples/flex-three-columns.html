@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Three-column Flexbox Sample Web Page</title>
-	<meta name="description" content="A responsive three-column layout using CSS flexbox, with fluid text, images and coloured backgrounds.">
+  <!--Browser Compatibility-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Hiding a web page from search engines-->
+  <!--<meta name="robots" content="noindex">-->
+  <!--Page Title-->
+  <title>Mandela Samboy / Three-column Flexbox Sample Web Page</title>
+  <!--Page Data-->
+  <meta name="description" content="A responsive three-column layout using CSS flexbox, with fluid text, images and coloured backgrounds."> 
+  <meta name="keywords" content="#">
+  <meta name="author" content="Mandela Samboy">
+  <!--Style Link-->
+  <link rel="stylesheet" href="flex-three-columns.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> 
+  <!--Icons/Features-->
+  <!--Google Analytics-->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159180375-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <link rel="stylesheet" href="flex-three-columns.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> 
-
+  gtag('config', 'UA-159180375-1');
+  </script>
 </head>
 
 <body>
 
 <!-- Parent container block with flexbox -->
-<div class="container-block container-flexbox">
+<div class="container-block container-flexbox bg-dark">
 
 	<div class="item-col-3">
 		<img src="heart.jpg" alt="Hazelnut Cake">
@@ -46,7 +65,7 @@
 		<p>This coffee cake with its cinnamon crumb topping is very popular in Brazil, especially in the south. This is a crowd-pleasing piece of cake.</p>
 	</div>
 
-	<div class="item-col-3">
+	<div class="item-col-3 bg-dark item-col-padding">
 		<img src="pieceofcake.jpg" alt="Oreos Cake">
 		<h3>Oreos Cake</h3>
 		<p>This delicious Oreo cake is chock full of creamy, crunchy chopped Oreos, and  crowned with a rich chocolate ganache.</p>

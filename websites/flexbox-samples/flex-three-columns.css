@@ -8,22 +8,24 @@ body { font-family: 'Playfair Display', sans-serif }
 
 /* ========== MAIN CONTENT CONTAINERS ========= */
 /* Desktops */
-@media (min-width:768px) { .container-block {  } }
+@media (min-width:768px) { .container-block { padding: 4% 8%; } }
 
 /* Mobiles */
-@media (max-width:767px) { .container-block {  } }
+@media (max-width:767px) { .container-block { padding: 11% 8%; } }
 
 
 /* ========== FLEXBOX PARENT AND CHILD COLUMN ELEMENTS ========= */
 
 /* Flexbox parent container */
 .container-flexbox {
-
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
 }
 
 /* Desktops: flexbox child columns */
 @media (min-width: 768px) {
-    .item-col-3 {  }
+    .item-col-3 { width: 29%; }
 }
 
 /* Mobiles: flexbox child columns */
@@ -36,13 +38,13 @@ body { font-family: 'Playfair Display', sans-serif }
 }
 
 /* Desktops: inner padding for child columns */
-@media (min-width: 768px) {
-    .item-col-3.item-col-padding { padding: 1.8% 2% 2.2% 2% }
+@media (min-width:768px) {
+    [class*="item-col-"].item-col-padding { padding: 1.8% 2% 2.2% 2% }
 }
 
 /* Mobiles: inner padding for child columns  */
-@media (max-width: 767px) {
-    .item-col-3.item-col-padding { padding: 6.5% 7% 7% 7% }
+@media (max-width:767px) {
+    [class*="item-col-"].item-col-padding { padding: 6.5% 7% 7% 7% }
 }
 
 
@@ -83,8 +85,5 @@ body { font-family: 'Playfair Display', sans-serif }
 
 
 /* Colours for sub-headings and paragraphs */
-
-
-/* Visual layout guides - remove when finished */
-.container-flexbox { border: red 1px solid }
-.container-flexbox .item-col-3 { border: blue 1px solid }
+.container-flexbox.bg-dark .item-col-3 * { color: #fff }
+.container-flexbox .item-col-3.bg-dark * { color: #fff }
