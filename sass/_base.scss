@@ -6,6 +6,8 @@ $color-smooth-purple-dark: #733fc0;
 $color-smooth-yellow: #F1F1BC;
 $color-smooth-red: #d1274b;
 $color-smooth-blue: #2F4F4F;
+$color-smooth-black: #333;
+$color-smooth-white: #f1f1f1;
 
 // FONT VARIABLES
 $font-smooth: 'Neucha', sans-serif;
@@ -15,6 +17,16 @@ $bp-desktop: 75em; // 1200px
 $bp-tablet-land: 67.5em; // 1080px
 $bp-tablet: 48em; // 768px
 $bp-phone: 37.5em; // 600px
+
+/* ========== UTILITIES ========== */
+.ml-sm {margin-left: 2rem;};
+.mr-sm {margin-right: 2rem;}
+
+// Background colors
+.bg-watermelon { background-color: $color-smooth-pink; }
+.bg-apple      { background-color: $color-smooth-green; }
+.bg-blueberry  { background-color: $color-smooth-purple; }
+.bg-lemon      { background-color: $color-smooth-yellow; }
 
 // BROWSER RESET
 *,
@@ -30,3 +42,11 @@ html {
     font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
     scroll-behavior: smooth;
 } 
+
+body { font-family: $font-smooth; }
+
+img { 
+    width: 100%; 
+    display: block; 
+    @extend %align-center; 
+}
