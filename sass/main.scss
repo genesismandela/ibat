@@ -1,5 +1,27 @@
-@import "base";
-@import "smoothies/footer";
-@import "smoothies/form";
-@import "smoothies/smooth";
-@import "smoothies/typography";
+// Webpage Helpers
+@import "1-Helpers/mixins";
+@import "1-Helpers/variables";
+
+// Webpage Base
+@import "2-Base/base";
+@import "2-Base/typography";
+@import "2-Base/utilities";
+
+// Webpage Layout
+@import "3-Layout/flex-col";
+@import "3-Layout/footer";
+@import "3-Layout/form";
+@import "3-Layout/header";
+@import "3-Layout/information";
+@import "3-Layout/nav-menu";
+
+// Webpage Complements
+@import "4-Complements/buttons";
+@import "4-Complements/cards";
+
+// Webpage Pages
+@import "5-Pages/smoothies";
+@import "5-Pages/software";
+@import "5-Pages/travel";
+@import "5-Pages/web-agency"; 
+

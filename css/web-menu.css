@@ -1,8 +1,4 @@
 
-/* *****************************************************************
-====================== MENU STYLES TO COPY AND PASTE ===============
-********************************************************************* */
-
 /* Begin menu styles */
 
 .unhide-content-under-menu { padding-top: 72px }
@@ -12,8 +8,8 @@
 /* Positions all menus in front of page content */
 .container-menu-desktop, 
 .container-menu-bar-mobile, 
-.flyout-menu { z-index: 999; font-family: sans-serif; }
-.container-menu-desktop, .container-menu-bar-mobile { width:100%; font-family: sans-serif }
+.flyout-menu { z-index: 999 }
+.container-menu-desktop, .container-menu-bar-mobile { width:100% }
 
 /* on mobiles - hide desktop menu */
 @media all and (max-width:767px) { 
@@ -85,8 +81,7 @@
     /* soften corners */
     /* border-radius: 4px; */
     /* rounded corners */
-    border-radius: 5px;
-    text-align: center;
+    border-radius: 100px
 }
 
 /* style icon in cta button on desktop and mobile menus */
@@ -257,8 +252,7 @@
 }
 
 .flyout-menu div.fly-out-social-icons { 
-    margin-top:12px;
-    margin-bottom: 2rem;
+    margin-top:12px
 }
 
 .flyout-menu div.fly-out-social-icons a {
@@ -275,44 +269,44 @@
 }
 
 /* menu links */
-.menu-light ul li a:link,  .menu-light ul li a:visited { color: #d1274b }
+.menu-light ul li a:link,  .menu-light ul li a:visited { color: #500294 }
 .menu-light ul li a:hover, .menu-light ul li a:active  { color: #222 }
 
 /* cta button */
 .menu-light ul li a.btn-cta:link, 
 .menu-light ul li a.btn-cta:visited {
     background-color: transparent;
-    color: #d1274b;
-    border-color:#d1274b
+    color: #500294;
+    border-color:#500294
 }
 
 .menu-light ul li a.btn-cta:hover,
 .menu-light ul li a.btn-cta:active {
-    background-color: #d1274b;
+    background-color: #500294;
     color: #fff;
-    border-color:#d1274b
+    border-color:#500294
 }
 
 /* on mobiles only */
-.menu-light.flyout-menu hr { background-color: #d1274b; border-color: #d1274b } 
+.menu-light.flyout-menu hr { background-color: #500294; border-color: #500294 } 
 
 .menu-light.flyout-menu h4,
 .menu-light.flyout-menu h5,
 .menu-light.flyout-menu h5 a, 
-.menu-light.flyout-menu p { color: #d1274b } 
+.menu-light.flyout-menu p { color: #500294 } 
 
 /* colour of hamburger icon bars */
 .menu-light .item-icon .bar1, 
 .menu-light .item-icon .bar2, 
-.menu-light .item-icon .bar3 { background-color: #d1274b }	
+.menu-light .item-icon .bar3 { background-color: #500294 }	
 
 /* phone number link */
-a[href^=tel] { text-decoration: none; color: #d1274b }
+a[href^=tel] { text-decoration: none; color: #500294 }
 
 /* email link */
 .menu-light.flyout-menu h5 a:link, 
 .menu-light.flyout-menu h5 a:visited {
-    border-bottom-color:#d1274b;
+    border-bottom-color:#500294;
 }
 
 .menu-light.flyout-menu h5 a:hover, 
@@ -321,10 +315,10 @@ a[href^=tel] { text-decoration: none; color: #d1274b }
 }
 
 /* profile image border colour */
-.menu-light.flyout-menu div.fly-out-profile-box img { border-color: #d1274b }
+.menu-light.flyout-menu div.fly-out-profile-box img { border-color: #500294 }
 
 /* contact icons */
-.menu-light.flyout-menu .fly-out-social-icons a i { color:#d1274b }
+.menu-light.flyout-menu .fly-out-social-icons a i { color:#500294 }
 
 /* === End light background menu === */
 
@@ -334,7 +328,7 @@ a[href^=tel] { text-decoration: none; color: #d1274b }
 
 /* background colour */
 .menu-dark { 
-	background-color: #d1274b; 
+	background-color: #500294; 
 	transition: all .5s ease-in-out
 }
 
@@ -345,7 +339,7 @@ a[href^=tel] { text-decoration: none; color: #d1274b }
 /* cta button */
 .menu-dark ul li a.btn-cta:link,
 .menu-dark ul li a.btn-cta:visited { 
-    background-color: #d1274b;
+    background-color: #500294;
     color: #fff;
     border-color:#fff
 }
@@ -353,7 +347,7 @@ a[href^=tel] { text-decoration: none; color: #d1274b }
 .menu-dark ul li a.btn-cta:hover,
 .menu-dark ul li a.btn-cta:active { 
     background-color: #fff;
-    color: #d1274b;
+    color: #500294;
     border-color:#fff
 }
 
@@ -381,11 +375,11 @@ a[href^=tel] { text-decoration: none; color: #fff }
 
 .menu-dark.flyout-menu h5 a:hover, 
 .menu-dark.flyout-menu h5 a:active {
-    border-bottom-color: #d1274b;
+    border-bottom-color: #500294;
 }
 
 /* profile image border colour */
-.menu-dark.flyout-menu div.fly-out-profile-box img { border-color: #d1274b }
+.menu-dark.flyout-menu div.fly-out-profile-box img { border-color: #500294 }
 
 /* contact icons */
 .menu-dark.flyout-menu .fly-out-social-icons a i { color:#fff }
@@ -409,16 +403,16 @@ a[href^=tel] { text-decoration: none; color: #fff }
 /* cta button */
 .menu-transparent ul li a.btn-cta:link,
 .menu-transparent ul li a.btn-cta:visited { 
-    background-color: #d1274b;
+    background-color: #500294;
     color: #fff;
-    border-color:#d1274b;
+    border-color:#500294;
 }
 
 .menu-transparent ul li a.btn-cta:hover,
 .menu-transparent ul li a.btn-cta:active { 
     background-color: #fff;
-    color: #d1274b;
-    border-color:#d1274b
+    color: #500294;
+    border-color:#500294
 }
 
 /* on mobiles only - various content */
@@ -432,7 +426,7 @@ a[href^=tel] { text-decoration: none; color: #fff }
 /* colour of hamburger icon bars */
 .menu-transparent .item-icon .bar1, 
 .menu-transparent .item-icon .bar2, 
-.menu-transparent .item-icon .bar3 { background-color: #fff }
+.menu-transparent .item-icon .bar3 { background-color: #500294 }
 
 /* phone number link */
 a[href^=tel] { text-decoration: none; color: #fff }
@@ -445,11 +439,11 @@ a[href^=tel] { text-decoration: none; color: #fff }
 
 .menu-transparent.flyout-menu h5 a:hover, 
 .menu-transparent.flyout-menu h5 a:active {
-    border-bottom-color: #d1274b;
+    border-bottom-color: #500294;
 }
 
 /* profile image border colour */
-.menu-transparent.flyout-menu div.fly-out-profile-box img { border-color: #d1274b }
+.menu-transparent.flyout-menu div.fly-out-profile-box img { border-color: #500294 }
 
 /* contact icons */
 .menu-transparent.flyout-menu .fly-out-social-icons a i { color:#fff }

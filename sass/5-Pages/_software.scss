@@ -1,0 +1,19 @@
+.dashboard {
+    width: 100%;
+    position: relative;
+
+    &::after {
+        position: relative;
+        content: "";
+        left: 0;
+        bottom: 0;
+        height: 400px;
+        width: 100%;
+        z-index: 1;
+        background: linear-gradient(to bottom, #fff, transparent);
+    }
+
+    img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,56 @@
+.flex-col-center {
+    @include FlexColCenter;
+}
+
+.col-1-info {
+    text-align: center;
+    width: 100%;
+
+    &__travel {
+        /* Desktop */
+        @media only screen and (min-width: $bp-tablet) {
+            padding: 2% 10% 1% 10%;
+        }
+
+        /* Mobiles */
+        @media only screen and (max-width: $bp-tablet) {
+            padding: 7% 8% 1% 8%;
+        }
+    }
+
+    &__web {
+        /* Desktop */
+        @media only screen and (min-width: $bp-tablet) {
+            padding: 4% 10% 3% 10%;
+        }
+
+        /* Mobiles */
+        @media only screen and (max-width: $bp-tablet) {
+            padding: 7% 8% 3% 8%;
+        }
+    }
+
+    &__smoothies {  
+        /* Desktop */
+        @media only screen and (min-width: $bp-tablet) {
+            padding: 4% 12%;
+        }
+
+        /* Mobiles */
+        @media only screen and (max-width: $bp-tablet) {
+            padding: 12% 8%;
+        }
+    }
+
+    &__software {
+        /* Desktop */
+        @media only screen and (min-width: $bp-tablet) {
+            padding: 4% 10%;
+        }
+
+        /* Mobiles */
+        @media only screen and (max-width: $bp-tablet) {
+            padding: 8%;
+        }
+    }
+}

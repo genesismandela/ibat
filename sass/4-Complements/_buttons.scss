@@ -1,0 +1,29 @@
+.btn-cta {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1.2rem 4.2rem;
+    border-style: solid;
+    border-width: 4px;
+    margin: 3.2rem 0;
+    border-radius: 50px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    &--software {
+        &:link,
+        &:visited {
+            color: $color-software-green;
+            background-color: $color-white;
+            border-color: $color-software-green;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-white;
+            background-color: $color-software-green;
+            border-color: $color-software-green;
+        }
+    }
+}

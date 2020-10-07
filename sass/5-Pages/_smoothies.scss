@@ -1,0 +1,86 @@
+// Smoothies Section styled with grid.
+.smoothies {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-template-rows: repeat(2, 1fr);
+        gap: 3rem;
+        justify-content: center;
+
+        padding: 3rem;
+
+        max-width: 114.9rem;
+        margin: 10rem auto;
+
+        // Smoothies Cards
+        &__card {           
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            justify-self: center;
+
+            border: 1px solid #222;
+            background-color: rgba(#222, .8);
+
+            margin-bottom: 4rem;
+
+            &__img {
+                height: auto;
+                width: 100%;
+                grid-column: 1 / -1;
+                grid-row: 1 / -1;
+
+                object-fit: cover;
+                display: block;
+            }
+
+            .heading-4 {
+                width: 80%;
+                grid-column: 1 / -1;
+                grid-row: 1 / -1;
+                justify-self: center;
+                align-self: flex-end;
+                transform: translateY(50%);
+
+                cursor: pointer;
+        
+                font-size: 3.5rem;
+                background-color: rgba(#fff, 0.5);
+                border: 2px solid $color-smooth-red;
+                border-radius: 5px;
+                padding: 1.6rem;
+                text-align: center;
+            }
+        }
+}
+
+// Fruits Section styled with flex with CTA button.
+.fruits {
+    background-image: linear-gradient(rgba($color-smooth-black, .2), rgba($color-smooth-black, 0.8)), url(../projects/smoothies/img/fruits.jpg);
+    @include bgImages;
+    height: 50rem;
+    padding: 0 5%;
+    width: 100%;
+    @include FlexColCenter;
+
+    &__btn {
+    font-size: 1.8rem;
+    display: block;
+    font-weight: bold;
+    border: 2px solid $color-smooth-red;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 1.4rem;
+    padding: 1.6rem;
+    color: $color-smooth-red;
+    
+    cursor: pointer;
+    
+        &:hover {
+            background-color: $color-smooth-red;
+            color: $color-smooth-white;
+        }
+    
+        i {
+            margin-left: 1.2rem;
+        }
+    }
+}

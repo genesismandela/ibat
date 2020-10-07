@@ -1,0 +1,401 @@
+// H1 Heading styles inside the "HEADER SECTION" divided by the four projects.
+.heading-1 {
+    line-height: 1.1;
+    color: $color-white;
+    
+    &__web { // H1 WEB AGENCY
+        @include fluid-font(30px, 64px);
+        font-weight: bold;
+        color: $color-web-purple;
+
+        &--line-break {
+            background-color: $color-web-pink;
+            border: none;
+            height: 10px;
+            width: 40%;
+    
+            /* Desktops */
+            @media only screen and (min-width: $bp-tablet) {
+                margin: 2rem auto 4rem 0;
+            }
+            /* Mobiles */
+            @media only screen and (max-width: $bp-tablet) {
+                margin: 2rem auto;
+                text-align: center;
+            }
+        }
+    }
+
+    &__travel { // H1 TRAVEL AGENCY
+        @include fluid-font(42px, 102px);
+        @extend %textshadow;
+        font-weight: 700;
+        margin: 4% auto 3% auto;
+        width: 60%;
+        @extend %alignCenter;
+        font-family: 'Raleway', sans-serif;
+        
+        /* Mobiles */
+        @media only screen and (max-width: $bp-tablet) {
+            margin-top: 18%;
+            margin-bottom: 5%;
+        }
+    }
+
+    &__software { // H1 SOFTWARE ANALYTICS
+        @include fluid-font(30px, 60px);
+        color: $color-black;
+        font-weight: 900;
+        letter-spacing: -1px;
+        margin-bottom: 2rem;
+    }
+
+    &__smoothie { // H1 SMOOTH SMOOTHIES 
+        @include fluid-font(58px, 132px);  
+        @extend %textshadow; 
+        @extend %mb-xsm;
+        @extend %alignCenter;
+
+        @media only screen and (min-width: $bp-tablet) {
+            margin-bottom: 1%;
+        }
+
+        @media only screen and (max-width: $bp-tablet) {
+            margin-bottom: 5%;
+        }
+    }
+}
+
+// H2 Heading styles inside the "HEADER SECTION" divided by the four projects.
+.heading-2__header {
+
+    &__web { // H2 "Header" WEB AGENCY
+        @include fluid-font(16px, 28px); 
+        color: $color-web-grey;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    &__travel { // H2 "Header" TRAVEL AGENCY
+        @include fluid-font(32px, 64px); 
+        @extend %textshadow; 
+        color: $color-travel-orange;
+        font-weight: 700;
+        line-height: 1.5;
+        margin: 0 auto;
+        width: 90%;
+        @extend %alignCenter;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    &__software { // H2 "Header" SOFTWARE ANALYTICS
+        @include fluid-font(18px, 32px); 
+        color: $color-grey;
+        font-weight: 500;
+        line-height: 1.3;
+    }
+
+    &__smoothie { // H2 "Header" SMOOTH SMOOTHIES
+        @include fluid-font(26px, 64px); 
+        @extend %textshadow; 
+        color: $color-white;
+        @extend %alignCenter;
+    }
+}
+
+
+// H2 Heading Styles
+.heading-2 {
+    line-height: 1.2;
+    @extend %alignCenter;
+    color: $color-white;
+
+
+    &__web { // H2 in WEB AGENCY
+        @include fluid-font(26px, 48px);
+        color: $color-web-purple;
+        line-height: 1.1 !important;
+        margin-bottom: 1.6rem;
+        @extend %alignCenter;
+    }
+
+    &__travel { // H2 in TRAVEL AGENCY
+        @include fluid-font(30px, 64px);
+        @extend %mb-xsm;
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-family: 'Raleway', sans-serif;
+        @extend %alignCenter;
+
+        &--blue {
+            color: $color-travel-blue !important;
+        }
+
+        &--white {
+            color: $color-white;
+        }
+    }
+
+    &__software { // H2 in SOFTWARE ANALYTICS
+        @include fluid-font(30px, 64px);
+        font-weight: 900;
+        letter-spacing: -1px !important;
+        @extend %mb-xsm;
+
+        &--green {
+            color: $color-software-green;
+        }
+    }
+
+    &__smoothie { // H2 in SMOOTH SMOOTHIES
+        @include fluid-font(32px, 60px);
+        letter-spacing: 2px;
+        @extend %mb-xsm;
+
+        &--red {
+            color: $color-smooth-red;
+        }
+    }
+}
+
+
+// H3 Heading Styles
+.heading-3 {
+    line-height: 1.2;
+
+    &__web { // H3 Normal size in WEB AGENCY
+        @include fluid-font(20px, 24px);
+        color: $color-web-purple;
+        font-weight: bold;
+        line-height: 1.1 !important;
+        @extend %alignCenter;
+        margin-bottom: 6px;
+
+        &--small { // H3 Small size in WEB AGENCY
+            @extend %mb-xsm;
+            @include fluid-font(14px, 19px);
+            color: $color-web-purple;
+        }
+    }
+
+
+    &__travel { // H3 Normal size in Travel AGENCY
+        @include fluid-font(18px, 24px);
+        font-weight: 700;
+        margin-bottom: 2px;
+        letter-spacing: 2px;
+        color: $color-white;
+
+        &--orange { // H3 Normal size in black
+            color: $color-travel-orange;
+        }
+    }
+
+    &__software { // H3 Normal size in SOFTWARE AGENCY
+        @include fluid-font(24px, 20px); 
+        font-weight: 500;
+        @extend %mb-xsm;
+        text-align-last: left;
+        color: $color-black;
+
+        &--large { // H3 Large size in SOFTWARE AGENCY
+            @include fluid-font(26px, 56px); 
+            font-weight: bold;
+            color: $color-white;
+            @extend %mb-xsm;
+            @extend %alignCenter; 
+    
+            &--green {
+                color: $color-software-green;
+            }
+        }
+    }    
+
+    &__smoothie { // H3 Normal size in SMOOTH SMOOTHIES
+        @include fluid-font(32px, 64px);
+        letter-spacing: 2px;
+        @extend %mb-xsm;
+        @extend %alignCenter;
+
+        &--xlarge { // H3 Large size in SMOOTH SMOOTHIES
+            @include fluid-font(32px, 84px);
+            color: $color-smooth-purple-dark;
+        }
+    }
+}
+
+// Text Styles 
+.text {
+
+    &__web { // Text Normal size in WEB AGENCY
+        @include fluid-font(17px, 20px);
+        font-weight: 500;
+        line-height: 1.7;
+        @extend %alignCenter;
+
+        a {
+            text-decoration: none;
+            @extend %infolinks;
+            border-bottom-color: $color-web-pink;
+                
+            &:link,
+            &:visited {
+                color: $color-web-purple;
+            }
+
+            &:hover,
+            &:active {
+                color: $color-web-pink;
+            }
+        }
+
+        &--small { // Text Small size in WEB AGENCY
+            @include fluid-font(15px, 18px);
+            line-height: 1.5;
+            color: $color-web-purple;
+            @extend %alignCenter;
+        }
+    }
+
+    &__travel {
+
+        &--small {
+            @include fluid-font(14px, 16px); 
+            font-weight: 500;
+            line-height: 1.7;
+            @extend %mb-xsm;
+            color: $color-white;
+            font-family: 'Roboto Slab', serif;
+    
+            &--black { // Text White
+                color: $color-black;
+            }
+        }
+
+        &--medium { // Text Normal size in TRAVEL AGENCY
+            @include fluid-font(16px, 22px);
+            font-weight: 400;
+            line-height: 1.6;
+            letter-spacing: 1px;
+            @extend %mb-sm;
+            @extend %alignCenter;
+            color: $color-travel-blue;
+            font-family: 'Raleway', sans-serif;
+
+            &--review {
+                @include fluid-font(15px, 18px);
+                @extend %alignCenter;
+            }
+
+            a {
+                color: $color-travel-orange;
+                text-decoration: none;
+                @extend %infolinks;
+                font-weight: 700;
+                
+                &:link,
+                &:visited {
+                    color: $color-travel-orange;
+                }
+
+                &:hover,
+                &:active {
+                    border-bottom-color: transparent;
+                }
+            }
+
+            &--white { // Text White
+                color: $color-white; 
+            }
+        }
+    }
+
+    &__software {
+
+        &--large { // Text Large in SOFTWARE ANALYTICS
+            @include fluid-font(20px, 26px);
+            font-weight: 500;
+            margin-bottom: 2rem;
+            line-height: 2;
+            letter-spacing: 1px;
+            @extend %alignCenter;
+            color: $color-white;
+            padding: 0 6%;
+    
+            a {
+                color: $color-white;
+                @extend %infolinks;
+                border-bottom-color: inherit;
+    
+                &:hover,
+                &:active {
+                    text-decoration: none;
+                    border-bottom-color: $color-software-green;
+                }
+            }
+        }
+    
+        &--medium { // Text Medium in SOFTWARE ANALYTICS
+            @include fluid-font(16px, 22px);
+            font-weight: 400;
+            line-height: 2;
+            letter-spacing: 1px;
+            @extend %alignCenter;
+            color: $color-black;
+    
+            &--white {
+                color: $color-white;
+            }
+        }
+    
+        &--small { // Text Small in SOFTWARE ANALYTICS
+            @include fluid-font(14px, 16px);
+            font-weight: 400;
+            line-height: 1.5;
+            @extend %mb-xsm;
+            color: $color-grey;
+    
+            em {
+                font-weight: normal;
+            }
+        }
+    
+
+    }
+
+    
+    &__smoothie { // Text Normal in SMOOTH SMOOTHIES
+        @include fluid-font(16px, 24px); 
+        line-height: 1.6;
+        letter-spacing: 1px;
+        @extend %alignCenter;
+        color: $color-smooth-blue;
+
+        &--white { // Text Normal White
+            color: $color-white;
+        }
+
+        &--medium { // Text Medium in SMOOTH SMOOTHIES
+            @include fluid-font(20px, 32px);
+            margin-bottom: 7%;
+            line-height: 1.6;
+            letter-spacing: 1px;
+            @extend %alignCenter;
+            color: $color-smooth-purple-dark;
+    
+        }
+    
+        &--large { // Text Large in SMOOTH SMOOTHIES
+            @include fluid-font(26px, 54px);
+            line-height: 1.6;
+            @extend %alignCenter;
+            color: $color-smooth-purple;
+    
+            &--white { // Text Large White
+                color: $color-white;
+                @extend %mb-sm;
+            }
+        }
+    }
+
+}

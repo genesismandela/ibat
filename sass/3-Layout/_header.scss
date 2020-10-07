@@ -1,0 +1,53 @@
+.header {
+
+    &__col-1 {
+        @include FlexColCenter; 
+        @include bgImages;
+
+        &--smoothie {
+            background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../projects/smoothies/img/smoothie-bg.jpg');
+            @extend %BigScreenHeight;
+            @extend %SmallScreenHeight;
+        }
+
+        &__travel {
+            @extend %BigScreenHeight;
+            @extend %SmallScreenHeight;
+
+            &--home {
+                background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../projects/travel-agency/img/hero-home.jpg');
+            }
+    
+            &--destinations {
+                background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../projects/travel-agency/img/hero-destinations.jpg');
+            }
+    
+            &--about-us {
+                background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../projects/travel-agency/img/hero-about-us.jpg');
+            }
+    
+            &--contact {
+                background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../projects/travel-agency/img/hero-contact-us.jpg');
+            }
+        }
+    }
+
+    &__col-2 {
+        @include FlexWrap;
+        padding: 5rem 10%;
+
+        &__item-col-2 {
+            width: 45%;
+            @extend %pt-lg;
+    
+            @media only screen  and (max-width: $bp-tablet) {
+                text-align: center;
+                width: 100%;
+                padding: 2.5% 5%;
+    
+                &:nth-child(1) {order: 2;}
+                &:nth-child(2) {order: 1; padding-top: 7.5rem;}
+            }
+        }
+    }
+}

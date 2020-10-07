@@ -1,0 +1,60 @@
+// Smoothies Colors
+$color-smooth-pink: #FBBDD9;
+$color-smooth-green: #B7F3D9;
+$color-smooth-purple: #8C6BBE;
+$color-smooth-purple-dark: #733fc0;
+$color-smooth-yellow: #F1F1BC;
+$color-smooth-red: #d1274b;
+$color-smooth-blue: #2F4F4F;
+$color-smooth-black: #333;
+$color-smooth-white: #f1f1f1;
+
+// Web Agency Colors
+$color-web-purple: #500294;
+$color-web-white: #fef1ef;
+$color-web-blue-light: #d7edff;
+$color-web-pink: #ff3366;
+$color-web-grey: #4c4f5a;
+
+// Travel Agency Colors
+$color-travel-light: #eff8f5;
+$color-travel-orange: #ff5000;
+$color-travel-blue: #044d6c;
+
+// Software Analytics Colors
+$color-software-green: #5ba745;
+
+// Shared Colors
+$color-black: #000;
+$color-black-light: #202020;
+$color-white: #fff;
+$color-white-dark-1: #ececec;
+$color-white-dark-2: #cfcfcf;
+$color-grey: #808080;
+$color-blue-dark: #00008b;
+
+// Font Family Variables
+$font-smooth: 'Neucha', sans-serif;
+$font-software-agency: 'Roboto', sans-serif;
+$font-travel-agency-1: 'Raleway', sans-serif;
+$font-travel-agency-2: 'Roboto Slab', serif;
+$font-web-agency: 'Montserrat', sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-desktop: 75em; // 1200px
+$bp-tablet-land: 67.5em; // 1080px
+$bp-tablet: 48em; // 768px
+$bp-phone: 37.5em; // 600px
+
+// Background colors
+.bg-watermelon { background-color: $color-smooth-pink; }
+.bg-apple      { background-color: $color-smooth-green; }
+.bg-blueberry  { background-color: $color-smooth-purple; }
+.bg-lemon      { background-color: $color-smooth-yellow; }
+.bg-green      { background-color: $color-software-green; }
+.bg-pastel-blue {background-color: $color-web-blue-light; }
+.bg-pastel-pink { background-color: $color-web-white;}
+.bg-green-light {background-color: $color-travel-light;}
+.bg-orange {background-color: $color-travel-orange;}
+.bg-white {background-color: $color-white;}
+.bg-light-gray {background-color: $color-white-dark-1;}
