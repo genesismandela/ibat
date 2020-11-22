@@ -2031,13 +2031,6 @@ a[href^=tel] {
     background-color: #5ba745;
     border-color: #5ba745; }
 
-/*!
- * Hamburgers
- * @description Tasty CSS-animated hamburgers
- * @author Jonathan Suh @jonsuh
- * @site https://jonsuh.com/hamburgers
- * @link https://github.com/jonsuh/hamburgers
- */
 .hamburger {
   padding: 15px 15px;
   display: inline-block;
@@ -2464,67 +2457,6 @@ a[href^=tel] {
         border: 1px solid #2a292f; }
     .contact__form::placeholder {
       font-family: "Montserrat", sans-serif; }
-
-.technologies {
-  margin: 5rem 0;
-  width: 100%;
-  position: relative; }
-  .technologies__container {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0 3rem; }
-    .technologies__container__images {
-      margin: 0 1rem;
-      width: 15%; }
-  .technologies__modal {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    z-index: 15;
-    background-color: purple; }
-    .technologies__modal__overlay {
-      width: 100%;
-      height: 100vh;
-      z-index: 14;
-      backdrop-filter: blur(5px); }
-    .technologies__modal__list {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 50%;
-      height: 50%;
-      font-family: 'OpenSans';
-      list-style: upper-roman;
-      list-style-position: inside;
-      border: 1px solid black;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      border-radius: 3px; }
-      .technologies__modal__list--html {
-        background-color: rgba(251, 20, 60, 0.5); }
-      .technologies__modal__list--css {
-        background-color: rgba(4, 77, 108, 0.5); }
-      .technologies__modal__list--javascript {
-        background-color: rgba(241, 241, 188, 0.5); }
-      .technologies__modal__list--sass {
-        background-color: rgba(251, 189, 217, 0.5); }
-      .technologies__modal__list--github {
-        background-color: rgba(42, 41, 47, 0.5); }
-    .technologies__modal__item {
-      width: 100%;
-      font-size: 28px;
-      font-size: calc(22px + (28 - 22) * ((100vw - 320px) / (1600 - 320)));
-      padding: 1rem;
-      border-radius: 3px;
-      text-align: center; }
-      @media screen and (max-width: 320px) {
-        .technologies__modal__item {
-          font-size: 22px; } }
-      @media screen and (min-width: 1600px) {
-        .technologies__modal__item {
-          font-size: 28px; } }
 
 .smoothies {
   display: grid;
