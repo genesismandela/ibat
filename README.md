@@ -38,4 +38,4 @@ Used some Javascript code to make the site quite interactive showing basic knowl
 
 --> Link to the Landing page;
 
-    https://genesismandela.github.io/ibat-course-repository/.index.html
+    https://genesismandela.github.io/ibat-course-repository/index.html
