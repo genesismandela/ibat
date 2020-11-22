@@ -4,6 +4,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     color: #fff;
+    position: relative;
 
     &--red {
         background-color: $color-smooth-red;
@@ -19,6 +20,12 @@
 
     &--purple {
         background-color: $color-web-purple;
+    }
+
+    &--black {
+        background-color: $color-black;
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
     }
     
     @media only screen and (min-width: $bp-tablet) {
@@ -70,6 +77,10 @@
         // font-size: calc(22px + (26 - 22) * ((100vw - 320px)/(1600 - 320)));
         letter-spacing: 1px;
         color: $color-black-light;
+
+        &--light {
+            color: $color-white-dark-2;
+        }
     }
     
     &__text {
@@ -113,6 +124,28 @@
         a {
             font-size: 2.8rem;
             color: $color-white;
+        }
+    }
+
+    &__copyright {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        @extend %alignCenter;
+        transform: translate(-50%);
+        @include fluid-font(15px, 20px);
+        padding-top: 5rem;
+
+        font-family: $font-web-agency;
+
+        br {
+            display: none;
+            
+            @media only screen and (max-width: 500px) {
+                display: block;
+                margin-top: .5rem;
+            }
+            
         }
     }
 }

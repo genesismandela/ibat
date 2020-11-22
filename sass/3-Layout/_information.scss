@@ -5,6 +5,7 @@
 .col-1-info {
     text-align: center;
     width: 100%;
+    position: relative;
 
     &__travel {
         /* Desktop */
@@ -14,7 +15,7 @@
 
         /* Mobiles */
         @media only screen and (max-width: $bp-tablet) {
-            padding: 7% 8% 1% 8%;
+            padding: 7% 8% 1% 13%;
         }
     }
 
@@ -26,7 +27,7 @@
 
         /* Mobiles */
         @media only screen and (max-width: $bp-tablet) {
-            padding: 7% 8% 3% 8%;
+            padding: 12% 8%;
         }
     }
 

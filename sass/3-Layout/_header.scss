@@ -1,5 +1,6 @@
 .header {
 
+    // HEADER WITH ONE COLUMN // Travel Agency & Smooth Smoothies
     &__col-1 {
         @include FlexColCenter; 
         @include bgImages;
@@ -31,7 +32,7 @@
             }
         }
     }
-
+    // HEADER WITH TWO COLUMN // Software Analytics & Web Design Agency
     &__col-2 {
         @include FlexWrap;
         padding: 5rem 10%;
@@ -49,5 +50,161 @@
                 &:nth-child(2) {order: 1; padding-top: 7.5rem;}
             }
         }
+    }
+}
+
+// HOME PAGE HEADER
+.header-home {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+    font-family: $font-home;
+    @include bgImages;
+    background-image: url(../img/red-moon.jpg);
+
+
+    &__headings {
+        width: 100%;
+        height: 100%;
+
+        position: relative;
+        z-index: 1;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .heading {
+            text-align: center;
+            font-weight: bold;
+            position: absolute;
+
+            display: flex;
+            flex-direction: column;
+
+            color: transparent;
+            font-family: $font-home;
+
+            // .text-video {
+            //     height: 100%;
+            //     width: 100%;
+            //     position: absolute;
+
+            //     z-index: -1111;
+
+            //     object-fit: cover;
+            // }
+
+            &__span-1 {
+                @include fluid-font(32px, 150px);
+                display: block;
+                padding: 1rem;
+                mix-blend-mode: screen;
+                -webkit-text-stroke: 3px $color-white; 
+                text-stroke: 3px $color-white;
+
+                animation: fadeOut 3s ease-out .5s backwards;
+            }
+
+            p {
+                @include fluid-font(25px, 50px);
+                margin: 1rem 0;
+                mix-blend-mode: screen;
+                -webkit-text-stroke: 2px $color-white; 
+                text-stroke: 2px $color-white;
+                animation: fadeDown 1s ease-out 1.5s backwards;
+                backface-visibility: hidden;
+            }
+
+            &__span-2 {
+                @include fluid-font(30px, 92px);
+                display: block;
+                mix-blend-mode: screen;
+
+                animation: fadeUp 2s ease-out 2s backwards;
+                backface-visibility: hidden;
+                color: $color-white;
+            }
+        }
+    }
+
+    .navigation {
+        width: 100%;
+
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        z-index: 2;
+
+        background-color: transparent;
+
+        animation: fadeOut 1s ease-out 3.5s backwards;
+        backface-visibility: hidden;
+
+        &__list {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+
+            height: 100%;
+            width: 100%;
+        }
+
+        &__item {
+            list-style: none;
+            margin-right: 1rem;
+            padding: 1.5rem;
+        }
+
+        &__link {
+            font-family: $font-web-agency;
+            text-decoration: none;
+            @include fluid-font(15px, 25px);
+
+            @include fillColorEffect ($color-white, $color-home-red);
+            transition: background-position 500ms ease-out;
+    
+            &:hover {
+                background-position: 0 100%;
+            }
+        }
+    }
+
+    &__contact {
+        position: absolute;
+        bottom: 1.5rem;
+        right: 1.5rem;
+        
+        color: $color-white;
+        z-index: 10;
+        transition: all 1s ease;
+
+        display: flex;
+        align-items: center;
+
+        transition: all 1s;
+
+        animation: fadeOut 1s ease-out 4s backwards;
+        backface-visibility: hidden;
+
+        &__email {
+            @include fluid-font (14px, 15px);
+            margin-right: 1rem;
+            visibility: hidden;
+        }
+
+        &__mail-icon {
+            font-size: 2rem;
+            cursor: pointer;
+            
+            &:hover {
+                color: $color-home-red;
+            }
+        }
+
     }
 }

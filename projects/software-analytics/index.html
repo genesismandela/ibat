@@ -17,7 +17,6 @@
   <link rel="shortcut icon" type="image/png" href="#">
   <!--Style Link-->
   <link rel="stylesheet" href="../../css/style.css">
-  <link rel="stylesheet" href="../../css/software-menu.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,900,900i&display=swap" rel="stylesheet">
   <!--Icons/Features-->
@@ -35,7 +34,7 @@
 </head>
 <body id="software">
     <!-- Begin desktop menu -->
-    <div class="container-menu-desktop menu-dark menu-sticky">
+    <div class="container-menu-desktop menu-light menu-sticky">
         <!-- first child item -->
         <a href="#"><img src="img/software-logo.png" alt="website logo"></a>  
         <!-- second child item -->
@@ -253,9 +252,13 @@
     <!-- Site Map -->
     <div class="footer__container">
         <h4 class="footer__heading-4">Site Map</h4>
-        <p class="footer__text"><i class="fas fa-home fa-fw"></i><a class="footer__link" href="../../index.html">Home</a></p>
-        <p class="footer__text"><i class="fas fa-file-alt fa-fw"></i><a class="footer__link" href="../../portfolio.html">Portfolio</a></p>
-        <p class="footer__text"><i class="fas fa-lock fa-fw"></i><a class="footer__link" href="../../privacy.html">Privacy</a></p>
+        <div class="footer__container__site">
+            <p class="footer__text"><a class="footer__link" href="../../index.html">Home</a></p>
+            <p class="footer__text"><a class="footer__link" href="../smoothies/index.html">Smooth Smoothies</a></p>
+            <p class="footer__text"><a class="footer__link" href="index.html">Software Analytics</a></p>
+            <p class="footer__text"><a class="footer__link" href="../travel-agency/index.html">Travel Agency</a></p>
+            <p class="footer__text"><a class="footer__link" href="../web-agency/index.html">Web Design</a></p>
+          </div>
     </div>
     <!-- About me -->
     <div class="footer__container">
@@ -280,81 +283,8 @@
 	</footer>
 
 
-	<!-- Begin JavaScript code for desktop and mobile menus -->
-    <script>
+    <script src="../menu.js"></script>
 
-        // Code to detect click of option within fly-out menu
-        let specifiedElement = document.querySelector('.flyout-menu');
-        document.addEventListener('click', function(event) {
-            var isClickInside = specifiedElement.contains(event.target);
-            //If link is within current web page
-            if (isClickInside) {
-                //Get id of anchor
-                let anchor_id = window.location.hash;
-                //Add extra spacing above anchor
-                let elemAnchor = document.querySelector(anchor_id)
-                elemAnchor.classList.add('sticky-anchor');
-                //Close fly-out menu
-                toggleMobileMenu();
-            }
-            else {
-                return;
-            }
-        });
-
-	    // Code to show/hide fly-out mobile menu -->
-        document.querySelector('.item-icon').addEventListener('click', toggleMobileMenu)
-        const pageContainer = document.querySelector('.page-container');
-   
-        function toggleMobileMenu() {
-            //toggle hamburger icon
-            const elemIcon = document.querySelector('.item-icon');
-            elemIcon.classList.toggle("change");
-            const elemHTML = document.querySelector('html');
-            const elemBody = document.querySelector('body');            
-            const elemFlyOut = document.querySelector('.flyout-menu');
-
-            //if fly-out menu is currently closed, open it.
-            if (elemIcon.classList.contains('change')) {
-                elemFlyOut.classList.remove('flyout-menu-is-closed');
-                elemFlyOut.classList.add('flyout-menu-is-open');
-                elemHTML.classList.add('no-scroll');
-                elemBody.classList.add('no-scroll');
-            }    
-            //if fly-out menu is currently open, close it.
-            else {
-                elemFlyOut.classList.remove('flyout-menu-is-open');
-                elemFlyOut.classList.add('flyout-menu-is-closed');
-                elemHTML.classList.remove('no-scroll');
-                elemBody.classList.remove('no-scroll');                                
-            }
-        }
-
-		// Code for menus with transparent background
-		window.onscroll = function() {swapMenuStyle()};
-		const headerDesktop = document.querySelector('.container-menu-desktop');
-		const headerMobile = document.querySelector('.container-menu-bar-mobile');
-
-		const stickyDesktop = headerDesktop.offsetTop +300;
-		const stickyMobile = headerDesktop.offsetTop  +300;
-
-		function swapMenuStyle() {
-			if (window.pageYOffset > stickyDesktop) {
-				headerDesktop.classList.add("menu-light","menu-drop-shadow");
-				headerDesktop.classList.remove("menu-dark");
-				headerMobile.classList.add("menu-light","menu-drop-shadow");
-				headerMobile.classList.remove("menu-dark");
-
-			} else {
-				headerDesktop.classList.add("menu-dark");
-				headerDesktop.classList.remove("menu-light","menu-drop-shadow");
-				headerMobile.classList.add("menu-dark");
-				headerMobile.classList.remove("menu-light","menu-drop-shadow");
-			}
-		}
-
-	</script>
-	<!-- End JavaScript code for desktop and mobile menus -->
 
 </body>
 </html>

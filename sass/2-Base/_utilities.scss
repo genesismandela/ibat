@@ -1,54 +1,54 @@
 // Utility - Margin
-%mt-xsm {margin-top: 1.25rem;}
-%mb-xsm {margin-bottom: 1.25rem;}
-%ml-xsm {margin-left: 1.25rem;}
-%mr-xsm {margin-right: 1.25rem;}
+%mt-xsm {margin-top: 1.25rem !important;}
+%mb-xsm {margin-bottom: 1.25rem !important;}
+%ml-xsm {margin-left: 1.25rem !important;}
+%mr-xsm {margin-right: 1.25rem !important;}
 
-%mt-sm {margin-top: 2.5rem;}
-%mb-sm {margin-bottom: 2.5rem;}
-%ml-sm {margin-left: 2.5rem;}
-%mr-sm {margin-right: 2.5rem;}
+%mt-sm {margin-top: 2.5rem !important;}
+%mb-sm {margin-bottom: 2.5rem !important;}
+%ml-sm {margin-left: 2.5rem !important;}
+%mr-sm {margin-right: 2.5rem !important;}
 
-%mt-md {margin-top: 5rem;}
-%mb-md {margin-bottom: 5rem;}
-%ml-md {margin-left: 5rem;}
-%mr-md {margin-right: 5rem;}
+.mt-md {margin-top: 5rem !important;}
+.mb-md {margin-bottom: 5rem !important;}
+%ml-md {margin-left: 5rem !important;}
+%mr-md {margin-right: 5rem !important;}
 
-%mt-lg {margin-top: 7.5rem;}
-.mb-lg {margin-bottom: 7.5rem;}
-%ml-lg {margin-left: 7.5rem;}
-%mr-lg {margin-right: 7.5rem;}
+%mt-lg {margin-top: 7.5rem !important;}
+.mb-lg {margin-bottom: 7.5rem !important;}
+%ml-lg {margin-left: 7.5rem !important;}
+%mr-lg {margin-right: 7.5rem !important;}
 
-.mt-xlg {margin-top: 10rem;}
-%mb-xlg {margin-bottom: 10rem;}
-%ml-xlg {margin-left: 10rem;}
-%mr-xlg {margin-right: 10rem;}
+.mt-xlg {margin-top: 10rem !important;}
+%mb-xlg {margin-bottom: 10rem !important;}
+%ml-xlg {margin-left: 10rem !important;}
+%mr-xlg {margin-right: 10rem !important;}
 
 // Utility - Padding
-%pt-xsm {padding-top: 1.25rem;}
-%pb-xsm {padding-bottom: 1.25rem;}
-%pl-xsm {padding-left: 1.25rem;}
-%pr-xsm {padding-right: 1.25rem;}
+%pt-xsm {padding-top: 1.25rem !important;}
+%pb-xsm {padding-bottom: 1.25rem !important;}
+%pl-xsm {padding-left: 1.25rem !important;}
+%pr-xsm {padding-right: 1.25rem !important;}
 
-%pt-sm {padding-top: 2.5rem;}
-%pb-sm {padding-bottom: 2.5rem;}
-%pl-sm {padding-left: 2.5rem;}
-%pr-sm {padding-right: 2.5rem;}
+%pt-sm {padding-top: 2.5rem !important;}
+%pb-sm {padding-bottom: 2.5rem !important;}
+%pl-sm {padding-left: 2.5rem !important;}
+%pr-sm {padding-right: 2.5rem !important;}
 
-%pt-md {padding-top: 5rem;}
-%pb-md {padding-bottom: 5rem;}
-%pl-md {padding-left: 5rem;}
-%pr-md {padding-right: 5rem;}
+%pt-md {padding-top: 5rem !important;}
+.pb-md {padding-bottom: 5rem !important;}
+%pl-md {padding-left: 5rem !important;}
+%pr-md {padding-right: 5rem !important;}
 
-%pt-lg {padding-top: 7.5rem;}
-%pb-lg {padding-bottom: 7.5rem;}
-%pl-lg {padding-left: 7.5rem;}
-%pr-lg {padding-right: 7.5rem;}
+%pt-lg {padding-top: 7.5rem !important;}
+.pb-lg {padding-bottom: 7.5rem !important;}
+%pl-lg {padding-left: 7.5rem !important;}
+%pr-lg {padding-right: 7.5rem !important;}
 
-%pt-xlg {padding-top: 10rem;}
-%pb-xlg {padding-bottom: 10rem;}
-%pl-xlg {padding-left: 10rem;}
-%pr-xlg {padding-right: 10rem;}
+%pt-xlg {padding-top: 10rem !important;}
+%pb-xlg {padding-bottom: 10rem !important;}
+%pl-xlg {padding-left: 10rem !important;}
+%pr-xlg {padding-right: 10rem !important;}
 
 // Effects for links
 %infolinks {
@@ -62,10 +62,20 @@
 %textshadow {
     text-shadow: 2px 2px $color-black-light;
 }
+// Box Shadow
+%boxShadowBlack {
+    box-shadow: 1px 1px 2px $color-black, 0 0 25px $color-home-grey;
+}
 
-// Text align
+// Box Shadow
+%boxShadowWhite {
+    box-shadow: 1px 1px 2px $color-black, 0 0 25px $color-home-white;
+}
+
+// Text Align
 %alignCenter {text-align: center;}
 .alignCenter {text-align: center;}
+.alignLeft {text-align: left;}
 
 
 // Flex Column
@@ -75,7 +85,6 @@
 }
 
 // Header Height
-
 %BigScreenHeight {
     @media only screen and (min-width: $bp-tablet) {
         height: 56rem;

@@ -1,4 +1,10 @@
-// H1 Heading styles inside the "HEADER SECTION" divided by the four projects.
+///////////////////// HEADING-1 (HEADER) ///////////////////// 
+/*
+1. WEB AGENCY
+2. TRAVEL AGENCY
+3. SOFTWARE ANALYTICS
+4. SMOOTH SMOOTHIES
+*/
 .heading-1 {
     line-height: 1.1;
     color: $color-white;
@@ -65,8 +71,15 @@
         }
     }
 }
+///////////////////////////////////////////////////////////////
 
-// H2 Heading styles inside the "HEADER SECTION" divided by the four projects.
+///////////////////// HEADING-2 (HEADER) ///////////////////// 
+/*
+1. WEB AGENCY
+2. TRAVEL AGENCY
+3. SOFTWARE ANALYTICS
+4. SMOOTH SMOOTHIES
+*/
 .heading-2__header {
 
     &__web { // H2 "Header" WEB AGENCY
@@ -102,14 +115,32 @@
         @extend %alignCenter;
     }
 }
+///////////////////////////////////////////////////////////////
 
-
-// H2 Heading Styles
+///////////////////// HEADING-2 ///////////////////// 
+/*
+1. HOME
+2. WEB AGENCY
+3. TRAVEL AGENCY
+4. SOFTWARE ANALYTICS
+5. SMOOTH SMOOTHIES
+*/
 .heading-2 {
     line-height: 1.2;
     @extend %alignCenter;
     color: $color-white;
 
+    &__home { // H2 in HOME
+        color: $color-black;
+        @include fluid-font (25px, 75px);
+        margin: 15rem 0rem 3rem 0;
+        font-family: $font-home;
+        @extend %alignCenter;
+
+        &--light {
+            color: $color-home-white;
+        }
+    }
 
     &__web { // H2 in WEB AGENCY
         @include fluid-font(26px, 48px);
@@ -157,11 +188,35 @@
         }
     }
 }
+///////////////////////////////////////////////////////////////
 
-
-// H3 Heading Styles
+///////////////////// HEADING-3 ///////////////////// 
+/*
+1. HOME
+2. WEB AGENCY
+3. TRAVEL AGENCY
+4. SOFTWARE ANALYTICS
+5. SMOOTH SMOOTHIES
+*/
 .heading-3 {
     line-height: 1.2;
+
+    &__home {
+        font-family: $font-web-agency;
+        @include fluid-font(32px, 64px);
+        @extend %alignCenter;
+        @extend %mb-sm;
+        @extend %mt-sm;
+
+        &--light {
+            color: $color-home-white;
+        }
+
+        &--dark {
+            color: $color-home-grey;
+        }
+    }
+
 
     &__web { // H3 Normal size in WEB AGENCY
         @include fluid-font(20px, 24px);
@@ -180,7 +235,7 @@
 
 
     &__travel { // H3 Normal size in Travel AGENCY
-        @include fluid-font(18px, 24px);
+        @include fluid-font(22px, 26px);
         font-weight: 700;
         margin-bottom: 2px;
         letter-spacing: 2px;
@@ -223,9 +278,43 @@
         }
     }
 }
+///////////////////////////////////////////////////////////////
 
-// Text Styles 
+///////////////////// TEXT ///////////////////// 
+/*
+1. HOME
+2. WEB AGENCY
+3. TRAVEL AGENCY
+4. SOFTWARE ANALYTICS
+5. SMOOTH SMOOTHIES
+*/
 .text {
+    &__home {
+        @include fluid-font(18px, 25px);
+        text-align: left;
+        font-family: $font-web-agency;
+        margin-bottom: 1.2rem;
+        position: relative;
+        line-height: 1.7;
+        letter-spacing: 1.2px;
+        @extend %alignCenter;
+
+        &--light {
+            color: $color-home-white;
+        }
+
+        &--dark {
+            color: $color-home-grey;
+        }
+
+        .quotes {
+            @include fluid-font (150px, 300px);
+            position: absolute;
+            color: rgba($color-black, .2);
+            top: 0rem;
+            left: 0rem;
+        }
+    }
 
     &__web { // Text Normal size in WEB AGENCY
         @include fluid-font(17px, 20px);
@@ -362,7 +451,6 @@
     
 
     }
-
     
     &__smoothie { // Text Normal in SMOOTH SMOOTHIES
         @include fluid-font(16px, 24px); 
@@ -390,6 +478,7 @@
             line-height: 1.6;
             @extend %alignCenter;
             color: $color-smooth-purple;
+            font-family: $font-smooth;
     
             &--white { // Text Large White
                 color: $color-white;
@@ -397,5 +486,4 @@
             }
         }
     }
-
 }

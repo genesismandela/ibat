@@ -1,4 +1,5 @@
 // Webpage Helpers
+@import "1-Helpers/animations";
 @import "1-Helpers/mixins";
 @import "1-Helpers/variables";
 
@@ -18,10 +19,14 @@
 // Webpage Complements
 @import "4-Complements/buttons";
 @import "4-Complements/cards";
+@import "4-Complements/hamburger";
+@import "4-Complements/home-components";
 
 // Webpage Pages
+@import "5-Pages/home"; 
 @import "5-Pages/smoothies";
 @import "5-Pages/software";
-@import "5-Pages/travel";
-@import "5-Pages/web-agency"; 
+
+
+// @import "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 

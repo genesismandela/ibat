@@ -8,9 +8,8 @@
     "devserver": "live-server --browser=firefox",
     "start": "npm-run-all --parallel devserver watch:sass",
     "compile:sass": "node-sass sass/main.scss css/style.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+    "build-css": "node-sass --include-path scss sass/main.scss   css/style.min.css --output-style compressed"
   },
   "repository": {
     "type": "git",
@@ -24,5 +23,8 @@
   "homepage": "https://github.com/genesismandela/ibat-course-repository#readme",
   "devDependencies": {
     "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "hamburgers": "^1.1.3"
   }
 }
