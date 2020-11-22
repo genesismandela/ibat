@@ -1,6 +1,7 @@
 # GENESIS MANDELA - IBAT PROJECT
-/* ======= Hey! I'm Mandela Samboy and I am designer, developer and photographer. ======= */
-/* ======= Currently located in Dublin I am looking to master my developer skills. ======= */
+======= Hey! I'm Mandela Samboy and I am designer, developer and photographer.
+
+======= Currently located in Dublin I am looking to master my developer skills.
 
 ==== PROJECT DESCRIPTION 🖥️ ====
 
