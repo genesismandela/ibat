@@ -39,4 +39,4 @@ Considering that I have been lot of time with these project, and think that my k
 
 --> Link to the Landing page;
 
-https://genesismandela.github.io/ibat-course-repository/index.html
+https://genesismandela.github.io/ibat/index.html
