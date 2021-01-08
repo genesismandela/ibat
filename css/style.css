@@ -1337,8 +1337,8 @@ img {
       color: transparent;
       font-family: "Goldman", cursive; }
       .header-home__headings .heading__span-1 {
-        font-size: 150px;
-        font-size: calc(32px + (150 - 32) * ((100vw - 320px) / (1600 - 320)));
+        font-size: 75px;
+        font-size: calc(40px + (75 - 40) * ((100vw - 320px) / (1600 - 320)));
         display: block;
         padding: 1rem;
         mix-blend-mode: screen;
@@ -1347,13 +1347,13 @@ img {
         animation: fadeOut 3s ease-out .5s backwards; }
         @media screen and (max-width: 320px) {
           .header-home__headings .heading__span-1 {
-            font-size: 32px; } }
+            font-size: 40px; } }
         @media screen and (min-width: 1600px) {
           .header-home__headings .heading__span-1 {
-            font-size: 150px; } }
+            font-size: 75px; } }
       .header-home__headings .heading p {
-        font-size: 50px;
-        font-size: calc(25px + (50 - 25) * ((100vw - 320px) / (1600 - 320)));
+        font-size: 40px;
+        font-size: calc(30px + (40 - 30) * ((100vw - 320px) / (1600 - 320)));
         margin: 1rem 0;
         mix-blend-mode: screen;
         -webkit-text-stroke: 2px #fff;
@@ -1362,13 +1362,13 @@ img {
         backface-visibility: hidden; }
         @media screen and (max-width: 320px) {
           .header-home__headings .heading p {
-            font-size: 25px; } }
+            font-size: 30px; } }
         @media screen and (min-width: 1600px) {
           .header-home__headings .heading p {
-            font-size: 50px; } }
+            font-size: 40px; } }
       .header-home__headings .heading__span-2 {
-        font-size: 92px;
-        font-size: calc(30px + (92 - 30) * ((100vw - 320px) / (1600 - 320)));
+        font-size: 125px;
+        font-size: calc(50px + (125 - 50) * ((100vw - 320px) / (1600 - 320)));
         display: block;
         mix-blend-mode: screen;
         animation: fadeUp 2s ease-out 2s backwards;
@@ -1376,10 +1376,10 @@ img {
         color: #fff; }
         @media screen and (max-width: 320px) {
           .header-home__headings .heading__span-2 {
-            font-size: 30px; } }
+            font-size: 50px; } }
         @media screen and (min-width: 1600px) {
           .header-home__headings .heading__span-2 {
-            font-size: 92px; } }
+            font-size: 125px; } }
   .header-home .navigation {
     width: 100%;
     position: absolute;
@@ -2265,8 +2265,8 @@ a[href^=tel] {
 .tech {
   margin: 15rem 0; }
   .tech__image {
-    height: 20rem;
-    max-height: 28rem;
+    height: 15rem;
+    max-height: 20rem;
     padding-bottom: 1rem;
     cursor: pointer;
     object-fit: fit;
@@ -2312,7 +2312,8 @@ a[href^=tel] {
       align-items: center;
       position: absolute;
       z-index: 9500;
-      display: none; }
+      display: none;
+      pointer-events: none; }
       .tech__modal__window::after, .tech__modal__window::before {
         content: '';
         display: block;

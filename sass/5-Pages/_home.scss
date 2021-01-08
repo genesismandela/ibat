@@ -164,8 +164,8 @@
     margin: 15rem 0;
 
     &__image {
-        height: 20rem;
-        max-height: 28rem;
+        height: 15rem;
+        max-height: 20rem;
         padding-bottom: 1rem;
         cursor: pointer;
         object-fit: fit;
@@ -232,6 +232,8 @@
             display: none;
 
             @include borderCornerDouble($color-home-white, 5px);
+
+            pointer-events: none;
 
             &--html {
                 background: linear-gradient(90deg, 
