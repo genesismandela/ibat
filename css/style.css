@@ -457,6 +457,12 @@ img {
     @media screen and (min-width: 1600px) {
       .text__home--small {
         font-size: 18px; } }
+  .text__home--link {
+    color: inherit;
+    text-decoration: none; }
+    .text__home--link:hover {
+      color: #fb143c;
+      text-decoration: underline; }
   .text__home--light {
     color: #eaf7da; }
   .text__home--dark {
@@ -2417,7 +2423,7 @@ a[href^=tel] {
     display: block; }
 
 .contact {
-  background-color: #000;
+  background-color: #232325;
   padding: 3rem 0 7rem;
   position: relative; }
   .contact .text__home {
@@ -2435,7 +2441,6 @@ a[href^=tel] {
       max-width: 850px;
       width: 80%; }
     .contact__form__input, .contact__form__textarea {
-      border: 2px solid #fb143c;
       color: #2a292f; }
     .contact__form__input, .contact__form__submit {
       font-size: 30px;

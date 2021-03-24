@@ -320,7 +320,7 @@
 }
 
 .contact {
-	background-color: $color-black;
+	background-color: $color-black-dark;
 	padding: 3rem 0 7rem;
 	position: relative;
 
@@ -344,7 +344,6 @@
 		&__input,
 		&__textarea {
 			@extend %alignCenter;
-			border: 2px solid $color-home-red;
 			color: $color-home-grey;
 		}
 

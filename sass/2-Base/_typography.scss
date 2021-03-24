@@ -325,6 +325,16 @@
 			@include fluid-font(15px, 18px);
 		}
 
+		&--link {
+			color: inherit;
+			text-decoration: none;
+
+			&:hover {
+				color: $color-home-red;
+				text-decoration: underline;
+			}
+		}
+
 		&--light {
 			color: $color-home-white;
 		}
