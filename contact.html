@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--Browser Compatibility-->
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--Hiding a web page from search engines-->
+		<!--<meta name="robots" content="noindex">-->
+		<!--Page Title-->
+		<title>Mandela Samboy / Contact</title>
+		<!--Page Data-->
+		<meta name="description" content="Home page of my IBAT Project" />
+		<meta name="keywords" content="#" />
+		<meta name="author" content="Mandela Samboy" />
+		<!--Style Link-->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<!--Icons/Features-->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+			integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+			crossorigin="anonymous"
+		/>
+		<!--Fonts-->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Neucha&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Neucha&display=swap"
+			rel="stylesheet"
+		/>
+		<!--Google Analytics-->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-159180375-1"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "UA-159180375-1");
+		</script>
+	</head>
+	<body id="home">
+		<!-- START HOME HEADER SECTION -->
+		<header class="header-home header-home--contact">
+			<div class="header-home__headings">
+				<h1 class="heading">
+					<span class="heading__span-1">Genesis Mandela</span>
+					<span class="heading__span-2">Contact</span>
+				</h1>
+			</div>
+			<!-- The hidden navigation menu that is open when hamburger is clicked -->
+			<nav class="navigation">
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a href="index.html" class="navigation__link">Home</a>
+					</li>
+					<li class="navigation__item">
+						<a href="portfolio.html" class="navigation__link"
+							>Portfolio</a
+						>
+					</li>
+					<li class="navigation__item">
+						<a href="contact.html" class="navigation__link"
+							>Contact</a
+						>
+					</li>
+				</ul>
+			</nav>
+			<!-- EMAIL ICON BUTTON THAT SHOWS PERSONAL EMAIL WHEN CLICKED -->
+			<div class="header-home__contact">
+				<span class="header-home__contact__email"
+					>mandelasamboy@gmail.com</span
+				>
+				<i class="far fa-envelope header-home__contact__mail-icon"></i>
+			</div>
+		</header>
+
+		<!-- START HOME MAIN SECTION -->
+		<main id="main">
+			<!-- MAIN -- GET IN TOUCH -->
+			<section class="contact" id="contact">
+				<h2 class="heading-2__home heading-2__home--light">
+					Get in touch
+				</h2>
+				<p class="text__home text__home--light">
+					Send me message now to discuss a project and develop
+					front-end teamwork skills!
+				</p>
+
+				<form action="" class="contact__form">
+					<div class="contact__form__container">
+						<input
+							type="text"
+							name="name"
+							id="name"
+							class="contact__form__input"
+							placeholder="Your name"
+						/>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Your email"
+							class="contact__form__input"
+						/>
+					</div>
+					<textarea
+						name="message"
+						id="message"
+						class="contact__form__textarea"
+						placeholder="Write your message"
+					></textarea>
+					<input
+						type="submit"
+						value="Send"
+						class="contact__form__submit"
+					/>
+				</form>
+				<div class="professional-links">
+					<div class="professional-links__button">
+						<a
+							href="https://www.linkedin.com/in/mandela-samboy-b32288191/"
+							class="professional-links__link professional-links--linkedin"
+							target="_blank"
+						>
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+					</div>
+
+					<div class="professional-links__button">
+						<a
+							href="https://github.com/genesismandela"
+							target="_blank"
+							class="professional-links__link professional-links--github"
+						>
+							<i class="fab fa-github"></i>
+						</a>
+					</div>
+
+					<div class="professional-links__button">
+						<a
+							href="spotify:user:mande6910"
+							class="professional-links__link professional-links--spotify"
+							target="_blank"
+						>
+							<i class="fab fa-spotify"></i>
+						</a>
+					</div>
+
+					<div class="professional-links__button">
+						<a
+							href="https://www.eyeem.com/u/genesismandela"
+							class="professional-links__link professional-links--gallery"
+							target="_blank"
+						>
+							<i class="fas fa-camera-retro"></i>
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- ===== Begin FOOTER section ===== -->
+		<footer class="footer footer--black">
+			<!-- Site Map -->
+			<div class="footer__container">
+				<h4 class="footer__heading-4 footer__heading-4--light">
+					Site Map
+				</h4>
+				<div class="footer__container__site">
+					<p class="footer__text">
+						<a class="footer__link" href="index.html">Home</a>
+					</p>
+					<p class="footer__text">
+						<a
+							class="footer__link"
+							href="projects/smoothies/index.html"
+							>Smooth Smoothies</a
+						>
+					</p>
+					<p class="footer__text">
+						<a
+							class="footer__link"
+							href="projects/software-analytics/index.html"
+							>Software Analytics</a
+						>
+					</p>
+					<p class="footer__text">
+						<a
+							class="footer__link"
+							href="projects/travel-agency/index.html"
+							>Travel Agency</a
+						>
+					</p>
+					<p class="footer__text">
+						<a
+							class="footer__link"
+							href="projects/web-agency/index.html"
+							>Web Design</a
+						>
+					</p>
+				</div>
+			</div>
+
+			<!-- About me -->
+			<div class="footer__container">
+				<h4 class="footer__heading-4 footer__heading-4--light">
+					About Me
+				</h4>
+				<p class="footer__text footer__text--dark">
+					Hey! I'm Mandela Samboy and I'm designer, developer and
+					photographer.
+				</p>
+
+				<p class="footer__text footer__text--dark">
+					Currently located in Dublin, Ireland and looking to master
+					my front-end skills.
+				</p>
+			</div>
+
+			<!-- Contact -->
+			<div class="footer__container">
+				<h4 class="footer__heading-4 footer__heading-4--light">
+					Contact
+				</h4>
+				<div class="footer__container__contact-links">
+					<p class="footer__text">
+						<i class="fas fa-envelope fa-fw"></i
+						><a
+							class="footer__link"
+							href="mailto:mandelasamboy@gmail.com"
+							>Email</a
+						>
+					</p>
+					<p class="footer__text">
+						<i class="fab fa-github-square fa-fw"></i
+						><a
+							class="footer__link"
+							href="https://github.com/genesismandela"
+							target="_blank"
+							>GitHub</a
+						>
+					</p>
+					<p class="footer__text">
+						<i class="fab fa-linkedin fa-fw"></i
+						><a
+							class="footer__link"
+							href="https://www.linkedin.com/in/mandela-samboy-b32288191/"
+							target="_blank"
+							>Linkedin</a
+						>
+					</p>
+				</div>
+			</div>
+
+			<div class="footer__copyright">
+				&copy; Copyright 2020 <br />
+				Genesis Mandela
+			</div>
+		</footer>
+
+		<script src="main.js"></script>
+	</body>
+</html>

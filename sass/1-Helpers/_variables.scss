@@ -1,16 +1,16 @@
 // HOME COLORS
 $color-home-red: rgb(251, 20, 60);
-$color-home-grey: rgb(42,  41, 47);
+$color-home-grey: rgb(42, 41, 47);
 $color-home-white: #eaf7da;
 
 // Smoothies Colors
-$color-smooth-pink: #FBBDD9;
-$color-smooth-green: #B7F3D9;
-$color-smooth-purple: #8C6BBE;
+$color-smooth-pink: #fbbdd9;
+$color-smooth-green: #b7f3d9;
+$color-smooth-purple: #8c6bbe;
 $color-smooth-purple-dark: #733fc0;
-$color-smooth-yellow: #F1F1BC;
+$color-smooth-yellow: #f1f1bc;
 $color-smooth-red: #d1274b;
-$color-smooth-blue: #2F4F4F;
+$color-smooth-blue: #2f4f4f;
 $color-smooth-black: #333;
 $color-smooth-white: #f1f1f1;
 
@@ -39,12 +39,12 @@ $color-grey: #808080;
 $color-blue-dark: #00008b;
 
 // Font Family Variables
-$font-home: 'Goldman', cursive;
-$font-smooth: 'Neucha', sans-serif;
-$font-software-agency: 'Roboto', sans-serif;
-$font-travel-agency-1: 'Raleway', sans-serif;
-$font-travel-agency-2: 'Roboto Slab', serif;
-$font-web-agency: 'Montserrat', sans-serif;
+$font-home: "Goldman", cursive;
+$font-smooth: "Neucha", sans-serif;
+$font-software-agency: "Roboto", sans-serif;
+$font-travel-agency-1: "Raleway", sans-serif;
+$font-travel-agency-2: "Roboto Slab", serif;
+$font-web-agency: "Montserrat", sans-serif;
 
 // RESPONSIVE BREAKPOINTS
 $bp-desktop: 75em; // 1200px
@@ -53,14 +53,39 @@ $bp-tablet: 48em; // 768px
 $bp-phone: 37.5em; // 600px
 
 // Background colors
-.bg-watermelon { background-color: $color-smooth-pink; }
-.bg-apple      { background-color: $color-smooth-green; }
-.bg-blueberry  { background-color: $color-smooth-purple; }
-.bg-lemon      { background-color: $color-smooth-yellow; }
-.bg-green      { background-color: $color-software-green; }
-.bg-pastel-blue {background-color: $color-web-blue-light; }
-.bg-pastel-pink { background-color: $color-web-white;}
-.bg-green-light {background-color: $color-travel-light;}
-.bg-orange {background-color: $color-travel-orange;}
-.bg-white {background-color: $color-white;}
-.bg-light-gray {background-color: $color-white-dark-1;}
+.bg-watermelon {
+	background-color: $color-smooth-pink;
+}
+.bg-apple {
+	background-color: $color-smooth-green;
+}
+.bg-blueberry {
+	background-color: $color-smooth-purple;
+}
+.bg-lemon {
+	background-color: $color-smooth-yellow;
+}
+.bg-green {
+	background-color: $color-software-green;
+}
+.bg-pastel-blue {
+	background-color: $color-web-blue-light;
+}
+.bg-pastel-pink {
+	background-color: $color-web-white;
+}
+.bg-green-light {
+	background-color: $color-travel-light;
+}
+.bg-orange {
+	background-color: $color-travel-orange;
+}
+.bg-white {
+	background-color: $color-white;
+}
+.bg-light-gray {
+	background-color: $color-white-dark-1;
+}
+.bg-dark {
+	background-color: $color-black-light;
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Browser Compatibility-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Hiding a web page from search engines-->
+  <!--<meta name="robots" content="noindex">-->
+  <!--Page Title-->
+  <title>Mandela Samboy / Portfolio</title>
+  <!--Page Data-->
+  <meta name="description" content="Home page of my IBAT Project">
+  <meta name="keywords" content="#">
+  <meta name="author" content="Mandela Samboy">
+  <!--Style Link-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <!--Icons/Features-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
+  <!--Google Analytics-->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159180375-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-159180375-1');
+  </script>
+</head>
+<body id="home">
+  <!-- START HOME HEADER SECTION -->
+  <header class="header-home header-home--portfolio">
+    <div class="header-home__headings">
+      <h1 class="heading">
+        <span class="heading__span-1">Genesis Mandela</span>
+        <span class="heading__span-2">Portfolio</span>
+      </h1>
+    </div>
+    <!-- The hidden navigation menu that is open when hamburger is clicked -->
+    <nav class="navigation">
+      <ul class="navigation__list">
+          <li class="navigation__item"><a href="index.html" class="navigation__link">Home</a></li>
+          <li class="navigation__item"><a href="portfolio.html" class="navigation__link">Portfolio</a></li>
+          <li class="navigation__item"><a href="contact.html" class="navigation__link">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- EMAIL ICON BUTTON THAT SHOWS PERSONAL EMAIL WHEN CLICKED -->
+    <div class="header-home__contact">
+      <span class="header-home__contact__email">mandelasamboy@gmail.com</span>
+      <i class="far fa-envelope header-home__contact__mail-icon"></i>
+    </div>
+  </header>
+
+  <!-- START HOME MAIN SECTION -->
+  <main id="main">
+      <!-- MAIN -- IBAT PROJECTS -->
+      <section class="projects" id="projects">
+        <h2 class="heading-2__home">Main Projects</h2>
+
+        <!-- SMOOTH SMOOTHIES PROJECT SECTION -->
+        <article class="col-2">
+          <div class="flex-center col-2__item">
+            <img src="img/smoothies.jpg" alt="smooth-smoothies" title="Smooth Smoothies Project" class="project-image project-image--block mt-md mb-md">
+          </div>
+          <div class="flex-center col-2__item">
+            <h3 class="heading-3__home heading-3__home--light">Smooth Smoothies</h3>
+            <p class="text__home text__home--light">Our world-class smoothies are great at any time of the day and offer a tasty alternative to sugary and unhealthy snacks!</p>
+            <img src="img/smoothies.jpg" alt="smooth-smoothies" title="Smooth Smoothies Project" class="project-image project-image--hidden mt-md mb-md">
+            <a href="projects/smoothies/index.html" class="project-btn project-btn--light">See project</a>
+          </div>
+        </article>
+        <!-- SOFTWARE ANALYTICS PROJECT SECTION -->
+        <article class="col-2">
+          <div class="flex-center col-2__item">
+            <h3 class="heading-3__home heading-3__home--dark">Software Analytics</h3>
+            <p class="text__home text__home--dark">Software Analytics tells you all you need to know about your website traffic, without tracking or storing your visitors' personal information. </p>
+            <img src="img/analytics.jpg" alt="software-analytics" title="Software Analytics Project" class="project-image project-image--hidden mt-md mb-md">
+            <a href="projects/software-analytics/index.html" class="project-btn project-btn--dark">See project</a>
+          </div>
+          <div class="flex-center col-2__item">
+            <img src="img/analytics.jpg" alt="software-analytics" title="Software Analytics Project" class="project-image project-image--block mt-md mb-md">
+          </div>
+        </article>
+        <!-- TRAVEL AGENCY PROJECT SECTION -->
+        <article class="col-2">
+          <div class="flex-center col-2__item">
+            <img src="img/travel.jpg" alt="travel-agency" title="Travel Agency Project" class="project-image mt-md mb-md">
+          </div>
+          <div class="flex-center col-2__item">
+            <h3 class="heading-3__home heading-3__home--light">Travel Agency</h3>
+            <p class="text__home text__home--light">Award-winning travel agency that has successfully provided happy holiday experiences for thousands of customers for over a decade.</p>
+            <a href="projects/travel-agency/index.html" class="project-btn project-btn--light">See project</a>
+          </div>
+        </article>
+        <!-- WEB DESIGN PROJECT SECTION -->
+        <article class="col-2">
+          <div class="flex-center col-2__item">
+            <h3 class="heading-3__home heading-3__home--dark">Web Design Agency</h3>
+            <p class="text__home text__home--dark">Award-winning</a> web, mobile and digital design agency based in Dublin, with clients all over the globe. We bring your online ideas to life.</p>
+            <a href="projects/web-agency/index.html" class="project-btn project-btn--dark">See project</a>
+          </div>
+          <div class="flex-center col-2__item">
+            <img src="img/web-design.jpg" alt="web-design-agency" title="Web Design Agency Project" class="project-image mt-md mb-md"> 
+          </div>
+        </article>
+      </section>
+
+      <section class="flex-col">
+				<h2 class="heading-2__home">Extra Projects</h2>
+				<p class="text__home">
+					Here are some other projects that I've been working on to practice and improve HTML, CSS and Javascript skills.
+				</p>
+				<div class="col-3 col-3__travel">
+					<div class="col-3__travel__item alignCenter">
+						<img
+							src="img/miss_monique.webp"
+							alt="Miss Monique"
+							class="max-height"
+						/>
+						<h3
+							class="heading-3__home heading-3__home--small heading-3__home--dark"
+						>
+							Miss Monique
+						</h3>
+						<p
+							class="text__home text__home--small text__home--dark"
+						>
+							Tribute of the most recognised and fastest growing Progressive House female DJ.
+						</p>
+
+						<a
+							href="https://genesismandela.github.io/miss-monique/index.html"
+							class="project-btn project-btn--dark"
+              target="_blank"
+							>See project</a
+						>
+					</div>
+
+					<div class="col-3__travel__item alignCenter">
+						<img
+							src="img/nexter.jpg"
+							alt="Nexter"
+							class="max-height"
+						/>
+						<h3
+							class="heading-3__home heading-3__home--small heading-3__home--dark"
+						>
+							Nexter
+						</h3>
+						<p
+							class="text__home text__home--small text__home--dark"
+						>
+							Nexter Real Estate agency helps you to find the world's best luxury homes and properties for the most competitive price.
+						</p>
+
+						<a
+							href="https://genesismandela.github.io/nexter/index.html"
+							class="project-btn project-btn--dark"
+              target="_blank"
+							>See project</a
+						>
+					</div>
+
+					<div class="col-3__travel__item alignCenter">
+						<img
+							src="img/basics.jpg"
+							alt="Basics"
+							class="max-height"
+						/>
+						<h3
+							class="heading-3__home heading-3__home--small heading-3__home--dark"
+						>
+							Basics
+						</h3>
+						<p
+							class="text__home text__home--small text__home--dark"
+						>
+							My first HTML and CSS project where I show basics of web development using such technologies.
+						</p>
+						<a
+							href="https://genesismandela.github.io/basics/index.html"
+							class="project-btn project-btn--dark"
+              target="_blank"
+							>See project</a
+						>
+					</div>
+				</div>
+			</section>
+  </main>
+
+  <!-- ===== Begin FOOTER section ===== -->
+  <footer class="footer footer--black">
+      <!-- Site Map -->
+      <div class="footer__container">
+          <h4 class="footer__heading-4 footer__heading-4--light">Site Map</h4>
+          <div class="footer__container__site">
+            <p class="footer__text"><a class="footer__link" href="index.html">Home</a></p>
+            <p class="footer__text"><a class="footer__link" href="projects/smoothies/index.html">Smooth Smoothies</a></p>
+            <p class="footer__text"><a class="footer__link" href="projects/software-analytics/index.html">Software Analytics</a></p>
+            <p class="footer__text"><a class="footer__link" href="projects/travel-agency/index.html">Travel Agency</a></p>
+            <p class="footer__text"><a class="footer__link" href="projects/web-agency/index.html">Web Design</a></p>
+          </div>
+      </div>
+
+      <!-- About me -->
+      <div class="footer__container">
+        <h4 class="footer__heading-4 footer__heading-4--light">About Me</h4>
+        <p class="footer__text footer__text--dark">Hey! I'm Mandela Samboy and I'm designer, developer and photographer.</p>
+        
+        <p class="footer__text footer__text--dark">Currently located in Dublin, Ireland and looking to master my front-end skills.</p>
+      </div>    
+
+      <!-- Contact -->
+      <div class="footer__container">
+          <h4 class="footer__heading-4 footer__heading-4--light">Contact</h4>
+          <div class="footer__container__contact-links">
+            <p class="footer__text"><i class="fas fa-envelope fa-fw"></i><a class="footer__link" href="mailto:mandelasamboy@gmail.com">Email</a></p>
+            <p class="footer__text"><i class="fab fa-github-square fa-fw"></i><a class="footer__link" href="https://github.com/genesismandela" target="_blank">GitHub</a></p>
+            <p class="footer__text"><i class="fab fa-linkedin fa-fw"></i><a class="footer__link" href="https://www.linkedin.com/in/mandela-samboy-b32288191/" target="_blank">Linkedin</a></p>
+          </div>
+      </div>
+
+      <div class="footer__copyright">&copy; Copyright 2020 <br> Genesis Mandela</div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+

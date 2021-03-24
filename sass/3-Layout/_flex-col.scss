@@ -1,207 +1,205 @@
 .flex-col {
-    @include FlexColCenter;
-    padding: 10rem 10% 7.5rem 10%;
+	@include FlexColCenter;
+	padding: 10rem 10% 7.5rem 10%;
 }
 
 .col-2 {
-    @include FlexWrap;
-    align-items: center;
+	@include FlexWrap;
+	align-items: center;
 
-    &__item {
-        // Desktops: 2 columns
-        @media only screen and (min-width: $bp-tablet) {
-            width: 47%;
-        }
+	&__item {
+		// Desktops: 2 columns
+		@media only screen and (min-width: $bp-tablet) {
+			width: 47%;
+		}
 
-        // Mobiles: 1 column
-        @media only screen and (max-width: $bp-tablet) {
-            width: 100%;
-        }
+		// Mobiles: 1 column
+		@media only screen and (max-width: $bp-tablet) {
+			width: 100%;
+		}
 
-        &--flex-img {
-            @media only screen and (max-width: $bp-tablet) {
-                width: 80%;
-                margin: 0 auto;
-            }
-        }
-    }
+		&--flex-img {
+			@media only screen and (max-width: $bp-tablet) {
+				width: 80%;
+				margin: 0 auto;
+			}
+		}
+	}
 
-    &__fruit-img {
-        margin: 2.5rem 0;
-    }
+	&__fruit-img {
+		margin: 2.5rem 0;
+	}
 
-    @media only screen and (min-width: $bp-tablet) {
-        padding: 4% 12% 4% 12%;
-    }
+	@media only screen and (min-width: $bp-tablet) {
+		padding: 4% 12% 4% 12%;
+	}
 
-    @media only screen and (max-width: $bp-tablet) {
-        padding:  12% 8% 12% 8%;
-    }
+	@media only screen and (max-width: $bp-tablet) {
+		padding: 12% 8% 12% 8%;
+	}
 }
 
 #apple,
 #lemon {
-    // Mobiles: Change order for pictures and text
-    @media only screen and (max-width: $bp-tablet) {
-        :nth-child(1) {order: 2;}
-        :nth-child(2) {order: 1;}
-    }
-    
+	// Mobiles: Change order for pictures and text
+	@media only screen and (max-width: $bp-tablet) {
+		:nth-child(1) {
+			order: 2;
+		}
+		:nth-child(2) {
+			order: 1;
+		}
+	}
 }
 
 .col-3 {
-    padding: 4% 0 1% 0;
+	padding: 4% 0 1% 0;
 
-    &__web {
-        @include FlexWrap;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        padding: 2% 10%;
+	&__web {
+		@include FlexWrap;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		padding: 2% 10%;
 
-        &__item {
-            width: 30%;
-            padding: 3% 3% 3% 3%;
-            margin-bottom: 2%;
-            border-radius: 3px;
+		&__item {
+			width: 30%;
+			padding: 3% 3% 3% 3%;
+			margin-bottom: 2%;
+			border-radius: 3px;
 
-            @media only screen and (max-width: 950px) {
-                width: 45%;
-            }
+			@media only screen and (max-width: 950px) {
+				width: 45%;
+			}
 
-            @media only screen and (max-width: 650px) {
-                width: 90%;
-                margin-bottom: 3rem;
+			@media only screen and (max-width: 650px) {
+				width: 90%;
+				margin-bottom: 3rem;
+			}
+		}
 
-            }
-        }
+		img {
+			max-width: 90%;
+			margin: 0 auto;
+			margin-bottom: 2rem;
+			border-radius: 3px;
+			padding: 5%;
+			cursor: pointer;
 
-        img {
-            max-width: 90%;
-            margin: 0 auto;
-            margin-bottom: 2rem;
-            border-radius: 3px;
-            padding: 5%;
-            cursor: pointer;
+			box-shadow: 8px 10px 8px $color-grey;
+		}
+	}
 
-            box-shadow: 8px 10px 8px $color-grey;
-        }
-    }
+	&__software {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
 
-    &__software {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+		@media only screen and (max-width: 900px) {
+			padding-top: 4rem;
+		}
 
-        @media only screen and (max-width: 900px) {
-            padding-top: 4rem;
-        }
+		&__item {
+			padding: 3%;
+			width: 30%;
+			border-radius: 12px;
+			box-shadow: hsla(0, 0%, 63%, 0.8) 5px 5px 20px;
 
-        &__item {
-            padding: 3%;
-            width: 30%;
-            border-radius: 12px;
-            box-shadow: hsla(0, 0%, 63%, 0.8) 5px 5px 20px;
+			img {
+				@extend %mb-xsm;
+			}
 
-            img {
-                @extend %mb-xsm;
-            }
+			&--round {
+				border-radius: 50%;
+			}
 
-            &--round {
-                border-radius: 50%;
-            }
+			@media only screen and (max-width: 900px) {
+				width: 70%;
+				margin-bottom: 3rem;
+			}
 
-            @media only screen and (max-width: 900px) {
-                width: 70%;
-                margin-bottom: 3rem;
-            }
+			@media only screen and (max-width: 650px) {
+				width: 90%;
+			}
+		}
+	}
 
-            @media only screen and (max-width: 650px) {
-                width: 90%;
-            }
-        }
-    }
+	&__travel {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
 
-    &__travel {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+		@media only screen and (max-width: 900px) {
+			padding-top: 4rem;
+		}
 
-        @media only screen and (max-width: 900px) {
-            padding-top: 4rem;
-        }
+		&__item {
+			margin-bottom: 3%;
+			width: 30%;
 
-        &__item {
-            margin-bottom: 3%;
-            width: 30%;
+			img {
+				@extend %mb-xsm;
+				border-radius: 5px;
+			}
 
-            img {
-                @extend %mb-xsm;
-                border-radius: 5px;
-            }
+			.round {
+				border-radius: 50%;
+				border: 5px solid $color-travel-orange;
+				margin: 0 auto;
+				margin-bottom: 3rem;
+				width: 70%;
+			}
 
-            .round {
-                border-radius: 50%;
-                border: 5px solid $color-travel-orange;
-                margin: 0 auto;
-                margin-bottom: 3rem;
-                width: 70%;
-            }
+			@media only screen and (max-width: 900px) {
+				width: 47%;
+				margin-bottom: 3rem;
+			}
 
-            @media only screen and (max-width: 900px) {
-                width: 47%;
-                margin-bottom: 3rem;
-            }
-
-            @media only screen and (max-width: 650px) {
-                width: 87%;
-                margin-bottom: 3rem;
-            }
-        }
-    }
+			@media only screen and (max-width: 650px) {
+				width: 87%;
+				margin-bottom: 3rem;
+			}
+		}
+	}
 }
 
 .col-4 {
-    @include FlexWrap;
-    justify-content: space-evenly;
+	@include FlexWrap;
+	justify-content: space-evenly;
 
-    &__web {
-        @extend %alignCenter;
-        padding: 5rem 0;
+	&__web {
+		@extend %alignCenter;
+		padding: 5rem 0;
 
-        &__item {
-            width: 22%;
-            margin: 4% 0;
+		&__item {
+			width: 22%;
+			margin: 4% 0;
 
-            i {
-                @include fluid-font(48px, 94px);
-                color: $color-web-pink;
-                margin-bottom: 5%;
-            }
-        }
-    }
+			i {
+				@include fluid-font(48px, 94px);
+				color: $color-web-pink;
+				margin-bottom: 5%;
+			}
+		}
+	}
 
-    &__travel {
+	&__travel {
+		&__item {
+			width: 22%;
+			margin-bottom: 3%;
 
-        &__item {
-            width: 22%;
-            margin-bottom: 3%;
-    
-            img {
-                @extend %mb-xsm;
-                border-radius: 5px;
-            }
-    
-            @media only screen and (max-width: 900px) {
-                width: 47%;
-                margin-bottom: 10%;
-            }
-            @media only screen and (max-width: 500px) {
-                width: 100%;
-            }
-        }
-    
-    }
+			img {
+				@extend %mb-xsm;
+				border-radius: 5px;
+			}
 
-    
+			@media only screen and (max-width: 900px) {
+				width: 47%;
+				margin-bottom: 10%;
+			}
+			@media only screen and (max-width: 500px) {
+				width: 100%;
+			}
+		}
+	}
 }

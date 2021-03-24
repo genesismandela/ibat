@@ -1,181 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!--Browser Compatibility-->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--Hiding a web page from search engines-->
-  <!--<meta name="robots" content="noindex">-->
-  <!--Page Title-->
-  <title>Mandela Samboy / Travel Agency</title>
-  <!--Page Data-->
-  <meta name="description" content="IBAT Tours is an award-winning travel agency that has successfully provided happy holiday experiences for thousands of customers for over a decade.">
-  <meta name="keywords" content="#">
-  <meta name="author" content="Mandela Samboy">
-  <!-- Page Icon -->
-  <link rel="shortcut icon" type="image/png" href="#">
-  <!--Style Link-->
-  <link rel="stylesheet" href="../../css/style.min.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">   
-  <!--Icons/Features-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-  <!--Google Analytics-->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159180375-1"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<head>
+		<!--Browser Compatibility-->
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--Hiding a web page from search engines-->
+		<!--<meta name="robots" content="noindex">-->
+		<!--Page Title-->
+		<title>Mandela Samboy / Travel Agency</title>
+		<!--Page Data-->
+		<meta
+			name="description"
+			content="IBAT Tours is an award-winning travel agency that has successfully provided happy holiday experiences for thousands of customers for over a decade."
+		/>
+		<meta name="keywords" content="#" />
+		<meta name="author" content="Mandela Samboy" />
+		<!-- Page Icon -->
+		<link rel="shortcut icon" type="image/png" href="#" />
+		<!--Style Link-->
+		<link rel="stylesheet" href="../../css/style.css" />
+		<!-- Google Fonts -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+		<!--Icons/Features-->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+			integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+			crossorigin="anonymous"
+		/>
+		<!--Google Analytics-->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-159180375-1"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
 
-  gtag('config', 'UA-159180375-1');
-  </script>
-</head>
-<body class="bg-green-light">
+			gtag("config", "UA-159180375-1");
+		</script>
+	</head>
+	<body class="bg-green-light">
+		<!-- Begin desktop menu -->
+		<div class="container-menu-desktop menu-transparent menu-sticky">
+			<!-- first child item -->
+			<a href="index.html"
+				><img src="img/travel-logo.png" alt="website logo"
+			/></a>
+			<!-- second child item -->
+			<ul>
+				<li><a href="destinations.html">Destinations</a></li>
+				<li><a href="about-us.html">About Us</a></li>
+				<li>
+					<a href="contact-us.html" class="btn-cta"
+						><i class="fas fa-plane"></i> Contact Us</a
+					>
+				</li>
+			</ul>
+		</div>
 
-    <!-- Begin desktop menu -->
-    <div class="container-menu-desktop menu-transparent menu-sticky">
-        <!-- first child item -->
-        <a href="index.html"><img src="img/travel-logo.png" alt="website logo"></a>  
-        <!-- second child item -->
-        <ul>
-            <li><a href="destinations.html">Destinations</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="contact-us.html" class="btn-cta"><i class="fas fa-plane"></i> Contact Us</a></li>  
-        </ul>
-    </div>
+		<!-- Begin mobile menu bar -->
+		<div class="container-menu-bar-mobile menu-transparent menu-sticky">
+			<!-- first child -->
+			<a href="index.html"
+				><img src="img/travel-logo.png" alt="website logo"
+			/></a>
+			<!-- second child -->
+			<div class="item-icon">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+		</div>
 
-    <!-- Begin mobile menu bar -->
-    <div class="container-menu-bar-mobile menu-transparent menu-sticky">
-        <!-- first child -->
-        <a href="index.html"><img src="img/travel-logo.png" alt="website logo"></a>  
-        <!-- second child -->
-        <div class="item-icon">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-    </div>
+		<!-- Begin mobile menu slide-out options -->
+		<div class="flyout-menu flyout-menu-is-closed menu-light">
+			<ul>
+				<li><a href="destinations.html">Destinations</a></li>
+				<li><a href="about-us.html">About Us</a></li>
+				<li>
+					<a href="contact-us.html" class="btn-cta"
+						><i class="fas fa-plane"></i> Contact Us</a
+					>
+				</li>
+			</ul>
+			<hr />
+			<h4>About Me</h4>
+			<div class="fly-out-profile-box">
+				<img
+					src="../../img/profile-pic.jpg"
+					alt="Mandela Samboy, Web Designer"
+				/>
+				<p>
+					Hey! I'm <strong>Mandela Samboy</strong> and I'm designer,
+					developer and photographer
+				</p>
+			</div>
 
-    <!-- Begin mobile menu slide-out options -->
-    <div class="flyout-menu flyout-menu-is-closed menu-light">
-        <ul>
-            <li><a href="destinations.html">Destinations</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="contact-us.html" class="btn-cta"><i class="fas fa-plane"></i> Contact Us</a></li>
-        </ul>
-        <hr>
-        <h4>About Me</h4>
-            <div class="fly-out-profile-box">
-                <img src="../../img/profile-pic.jpg" alt="Mandela Samboy, Web Designer"> 
-                <p>Hey! I'm <strong>Mandela Samboy</strong> and I'm designer, developer and photographer</p>
-            </div>
-              
-        <h4>Contact</h4>
-        <p>Have a project you'd like to discuss? Let's make something great together!</p>
-              
-        <h5><a href="tel:0034648451156">+0034 648 451 156</a></h5>
-              
-        <h5><a href="mailto:mandelasamboy@gmail.com" target="_blank">mandelasamboy@gmail.com</a></h5>
-              
-        <h4>Social Links</h4>
-        
-        <div class="fly-out-social-icons">
-            <a href="https://github.com/genesismandela" target="_blank"><i class="fab fa-github-square fa-fw"></i></a>
-            <a href="https://www.linkedin.com/in/mandela-samboy-b32288191/" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a>
-            <a href="https://twitter.com/UzumakiEPC" target="_blank"><i class="fab fa-twitter-square"></i></a>
-            <a href="https://www.eyeem.com/u/genesismandela" target="_blank"><i class="fas fa-camera-retro"></i></a>
-            <a href="https://open.spotify.com/user/mande6910?si=o2e2uOlRSn-UweL0mG5IeA" target="_blank"><i class="fab fa-spotify"></i></a>
-        </div>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-    </div>
+			<h4>Contact</h4>
+			<p>
+				Have a project you'd like to discuss? Let's make something great
+				together!
+			</p>
 
-    <!-- Begin Header -->
-    <header class="header__col-1 header__col-1__travel header__col-1__travel--contact">
-        <div class="slide-in-top">
-            <h1 class="heading-1 heading-1__travel">IBAT Tours</h1>
-            <h2 class="heading-2__header__travel">Making your holiday special</h2>
-        </div>
-    </header>
+			<h5><a href="tel:0034648451156">+0034 648 451 156</a></h5>
 
-    <!-- Begin parent flexbox container for one column layout (.item-col-1) on all screens -->
-    <section class="flex-col-center col-1-info col-1-info__travel bg-green-light">
-        <h2 class="heading-2__travel heading-2__travel--blue">A getaway the way you want it</h2>
-        <p class="text__travel--medium">If one of our regular holiday offerings is not what you are looking for, our expert staff can help you plan that special getaway for your unique tastes.</p>  
-        <p class="text__travel--medium">Take your first step to a holiday you will never forget by completing the form below.</p>
-    </section>
-    <!-- End parent flexbox container -->
+			<h5>
+				<a href="mailto:mandelasamboy@gmail.com" target="_blank"
+					>mandelasamboy@gmail.com</a
+				>
+			</h5>
 
-    <!-- Begin container for contact form -->
-    <div class="travel-form-container bg-green-light">
-        <!-- Contact form starts here -->
-        <form class="travel-form" id="contact-form" name="contact-form" accept-charset="utf-8" method="post" action="https://formspree.io/mandelasamboy@gmail.com">
-            <!-- Begin contact form fields -->
-            <div class="travel-form__item">
-                <div class="travel-form__item__name">
-                    <label for="full-name">Full Name</label>
-                    <input type="text" name="name" id="full-name" placeholder="Your First and Last Name here." required>
-                </div>
-                <div class="travel-form__item__email">
-                    <label for="email-address">Email</label>
-                    <input type="email" name="_replyto" id="email-address" placeholder="Your Email Address here." required>
-                </div>
-            </div>
-            <div class="travel-form__item">
-                <div class="travel-form__item__textarea">
-                    <label for="message">Message</label>
-                    <textarea rows="5" name="message" id="message" placeholder="Your Message here." required></textarea>
-                </div>
+			<h4>Social Links</h4>
 
-                <div class="travel-form__item__btn">
-                    <button id="btn-submit" type="submit">Submit <i class="fas fa-arrow-circle-right"></i></button> 
-                </div>
-            </div>
-            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-            <!-- End contact form fields -->
-        </form>
-        <!-- Contact form ends here -->
-    </div>
+			<div class="fly-out-social-icons">
+				<a href="https://github.com/genesismandela" target="_blank"
+					><i class="fab fa-github-square fa-fw"></i
+				></a>
+				<a
+					href="https://www.linkedin.com/in/mandela-samboy-b32288191/"
+					target="_blank"
+					><i class="fab fa-linkedin fa-fw"></i
+				></a>
+				<a href="https://twitter.com/UzumakiEPC" target="_blank"
+					><i class="fab fa-twitter-square"></i
+				></a>
+				<a href="https://www.eyeem.com/u/genesismandela" target="_blank"
+					><i class="fas fa-camera-retro"></i
+				></a>
+				<a
+					href="https://open.spotify.com/user/mande6910?si=o2e2uOlRSn-UweL0mG5IeA"
+					target="_blank"
+					><i class="fab fa-spotify"></i
+				></a>
+			</div>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+		</div>
 
-    <!-- ===== Begin FOOTER section ===== -->
-    <footer class="footer footer--blue">
-        <!-- Site Map -->
-        <div class="footer__container">
-            <h4 class="footer__heading-4">Site Map</h4>
-            <div class="footer__container__site">
-                <p class="footer__text"><a class="footer__link" href="../../index.html">Home</a></p>
-                <p class="footer__text"><a class="footer__link" href="../smoothies/index.html">Smooth Smoothies</a></p>
-                <p class="footer__text"><a class="footer__link" href="../software-analytics/index.html">Software Analytics</a></p>
-                <p class="footer__text"><a class="footer__link" href="index.html">Travel Agency</a></p>
-                <p class="footer__text"><a class="footer__link" href="../web-agency/index.html">Web Design</a></p>
-              </div>
-        </div>
-        <!-- About me -->
-        <div class="footer__container">
-            <h4 class="footer__heading-4">About Me</h4>
-            <p class="footer__text footer__text--dark">Hey! I'm Mandela Samboy and I'm designer, developer and photographer</p>
-            
-            <p class="footer__text footer__text--dark">This is one of the sample web page that I created to showcase some of my digital creation skills.</p>
-    
-            <div class="footer__media">
-                <a href="https://www.eyeem.com/u/genesismandela" target="_blank"><i class="fas fa-camera-retro"></i></a>
-                <a href="https://open.spotify.com/user/mande6910?si=o2e2uOlRSn-UweL0mG5IeA" target="_blank"><i class="fab fa-spotify"></i></a>
-                <a href="https://twitter.com/UzumakiEPC" target="_blank"><i class="fab fa-twitter-square"></i></a>
-            </div>
-        </div>
-        <!-- Contact -->
-        <div class="footer__container">
-            <h4 class="footer__heading-4">Contact</h4>
-            <p class="footer__text"><i class="fas fa-envelope fa-fw"></i><a class="footer__link" href="mailto:mandelasamboy@gmail.com">Email</a></p>
-            <p class="footer__text"><i class="fab fa-github-square fa-fw"></i><a class="footer__link" href="https://github.com/genesismandela" target="_blank">GitHub</a></p>
-            <p class="footer__text"><i class="fab fa-linkedin fa-fw"></i><a class="footer__link" href="https://www.linkedin.com/in/mandela-samboy-b32288191/" target="_blank">Linkedin</a></p>
-        </div>
-    </footer>
+		<!-- Begin Header -->
+		<header
+			class="header__col-1 header__col-1__travel header__col-1__travel--contact"
+		>
+			<div class="slide-in-top">
+				<h1 class="heading-1 heading-1__travel">IBAT Tours</h1>
+				<h2 class="heading-2__header__travel">
+					Making your holiday special
+				</h2>
+			</div>
+		</header>
 
-    <!-- ===== JAVASCRIPT script file ===== -->
-    <script src="../menu.js"></script>
-</body>
+		<!-- Begin parent flexbox container for one column layout (.item-col-1) on all screens -->
+		<section
+			class="flex-col-center col-1-info col-1-info__travel bg-green-light"
+		>
+			<h2 class="heading-2__travel heading-2__travel--blue">
+				A getaway the way you want it
+			</h2>
+			<p class="text__travel--medium">
+				If one of our regular holiday offerings is not what you are
+				looking for, our expert staff can help you plan that special
+				getaway for your unique tastes.
+			</p>
+			<p class="text__travel--medium">
+				Take your first step to a holiday you will never forget by
+				completing the form below.
+			</p>
+		</section>
+		<!-- End parent flexbox container -->
+
+		<!-- Begin container for contact form -->
+		<div class="travel-form-container bg-green-light">
+			<!-- Contact form starts here -->
+			<form
+				class="travel-form"
+				id="contact-form"
+				name="contact-form"
+				accept-charset="utf-8"
+				method="post"
+				action="https://formspree.io/mandelasamboy@gmail.com"
+			>
+				<!-- Begin contact form fields -->
+				<div class="travel-form__item">
+					<div class="travel-form__item__name">
+						<label for="full-name">Full Name</label>
+						<input
+							type="text"
+							name="name"
+							id="full-name"
+							placeholder="Your First and Last Name here."
+							required
+						/>
+					</div>
+					<div class="travel-form__item__email">
+						<label for="email-address">Email</label>
+						<input
+							type="email"
+							name="_replyto"
+							id="email-address"
+							placeholder="Your Email Address here."
+							required
+						/>
+					</div>
+				</div>
+				<div class="travel-form__item">
+					<div class="travel-form__item__textarea">
+						<label for="message">Message</label>
+						<textarea
+							rows="5"
+							name="message"
+							id="message"
+							placeholder="Your Message here."
+							required
+						></textarea>
+					</div>
+
+					<div class="travel-form__item__btn">
+						<button id="btn-submit" type="submit">
+							Submit <i class="fas fa-arrow-circle-right"></i>
+						</button>
+					</div>
+				</div>
+				<input
+					type="hidden"
+					name="_subject"
+					id="email-subject"
+					value="Contact Form Submission"
+				/>
+				<!-- End contact form fields -->
+			</form>
+			<!-- Contact form ends here -->
+		</div>
+
+		<!-- ===== Begin FOOTER section ===== -->
+		<footer class="footer footer--blue">
+			<!-- Site Map -->
+			<div class="footer__container">
+				<h4 class="footer__heading-4">Site Map</h4>
+				<div class="footer__container__site">
+					<p class="footer__text">
+						<a class="footer__link" href="../../index.html">Home</a>
+					</p>
+					<p class="footer__text">
+						<a class="footer__link" href="../smoothies/index.html"
+							>Smooth Smoothies</a
+						>
+					</p>
+					<p class="footer__text">
+						<a
+							class="footer__link"
+							href="../software-analytics/index.html"
+							>Software Analytics</a
+						>
+					</p>
+					<p class="footer__text">
+						<a class="footer__link" href="index.html"
+							>Travel Agency</a
+						>
+					</p>
+					<p class="footer__text">
+						<a class="footer__link" href="../web-agency/index.html"
+							>Web Design</a
+						>
+					</p>
+				</div>
+			</div>
+			<!-- About me -->
+			<div class="footer__container">
+				<h4 class="footer__heading-4">About Me</h4>
+				<p class="footer__text footer__text--dark">
+					Hey! I'm Mandela Samboy and I'm designer, developer and
+					photographer
+				</p>
+
+				<p class="footer__text footer__text--dark">
+					This is one of the sample web page that I created to
+					showcase some of my digital creation skills.
+				</p>
+
+				<div class="footer__media">
+					<a
+						href="https://www.eyeem.com/u/genesismandela"
+						target="_blank"
+						><i class="fas fa-camera-retro"></i
+					></a>
+					<a
+						href="https://open.spotify.com/user/mande6910?si=o2e2uOlRSn-UweL0mG5IeA"
+						target="_blank"
+						><i class="fab fa-spotify"></i
+					></a>
+					<a href="https://twitter.com/UzumakiEPC" target="_blank"
+						><i class="fab fa-twitter-square"></i
+					></a>
+				</div>
+			</div>
+			<!-- Contact -->
+			<div class="footer__container">
+				<h4 class="footer__heading-4">Contact</h4>
+				<p class="footer__text">
+					<i class="fas fa-envelope fa-fw"></i
+					><a
+						class="footer__link"
+						href="mailto:mandelasamboy@gmail.com"
+						>Email</a
+					>
+				</p>
+				<p class="footer__text">
+					<i class="fab fa-github-square fa-fw"></i
+					><a
+						class="footer__link"
+						href="https://github.com/genesismandela"
+						target="_blank"
+						>GitHub</a
+					>
+				</p>
+				<p class="footer__text">
+					<i class="fab fa-linkedin fa-fw"></i
+					><a
+						class="footer__link"
+						href="https://www.linkedin.com/in/mandela-samboy-b32288191/"
+						target="_blank"
+						>Linkedin</a
+					>
+				</p>
+			</div>
+		</footer>
+
+		<!-- ===== JAVASCRIPT script file ===== -->
+		<script src="../menu.js"></script>
+	</body>
 </html>

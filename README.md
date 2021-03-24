@@ -1,11 +1,12 @@
 # GENESIS MANDELA - IBAT PROJECT
+
 ======= Hey! I'm Mandela Samboy and I am designer, developer and photographer.
 
 ======= Currently located in Dublin I am looking to master my developer skills.
 
 ==== PROJECT DESCRIPTION 🖥️ ====
 
-Repository created to show my knowledge and skills creating Responsive WebsiteS using HTML and CSS, in this case with the help of the pre-processor SASS which makes work easy and fast. 
+Repository created to show my knowledge and skills creating Responsive WebsiteS using HTML and CSS, in this case with the help of the pre-processor SASS which makes work easy and fast.
 
 Performed a small library with reusable classes and styles that can be used throught the project.
 
@@ -27,7 +28,7 @@ Used some Javascript code to make the site quite interactive showing basic knowl
 
 --> My personal review;
 
-Being my second small project that contains few pages, this time thanks to SASS the develop of the site has been not easier but more organized. SASS allowed me to create a small library with components that I have been using through the project, but changing few details for each page. 
+Second small project that contains few pages, thanks to SASS the development has been not easier but more organized. SASS allowed me to create a small library with components that I have been using through the project, but changing few details for each page.
 
 Being a project where the pages are not from the same topic, I needed to change typography, sizes, font-family, padding, margin or other styles for each element in each page.
 
