@@ -1,5 +1,23 @@
 // 'use strict';
 // =================== HOME PAGE ===================
+// Cookies Setup
+window.cookieconsent.initialise({
+	palette: {
+		popup: {
+			background: "#343c66",
+			text: "#cfcfe8",
+		},
+		button: {
+			background: "#f71559",
+		},
+	},
+	position: "top",
+	static: true,
+	content: {
+		href: "https://genesismandela.github.io/ibat/policy.html",
+	},
+});
+
 // HEADER MAIL ICON SHOW AND HIDE EMAIL
 const mailIcon = document.querySelector(".header-home__contact__mail-icon");
 mailIcon.addEventListener("click", function () {
