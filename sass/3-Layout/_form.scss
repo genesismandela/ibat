@@ -1,466 +1,491 @@
 // Smoothies Form
 .smooth {
-    // Email Form Section
-    &__container-form-email-signup {
-        text-align: center; 
-        background-color: #fff; 
-        
-        @media only screen and (min-width: $bp-tablet-land) {
-            margin:  4% 23% 5% 23%;
-		    padding: 2% 4% 4% 4%;
-        }
+	// Email Form Section
+	&__container-form-email-signup {
+		text-align: center;
+		background-color: #fff;
 
-        @media only screen and (max-width: $bp-tablet-land) {
-            margin: 6% 8%;
-		    padding: 7% 8% 8% 8%;
-        }
+		@media only screen and (min-width: $bp-tablet-land) {
+			margin: 4% 23% 5% 23%;
+			padding: 2% 4% 4% 4%;
+		}
 
-        &__flex-row {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
+		@media only screen and (max-width: $bp-tablet-land) {
+			margin: 6% 8%;
+			padding: 7% 8% 8% 8%;
+		}
 
-            @media only screen and (min-width: $bp-tablet) {
-                flex-direction: row;
+		&__flex-row {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
 
-                #email-address { flex: 1; margin: 0 3rem; }
-            }
-    
-            @media only screen and (max-width: $bp-tablet) {
-                flex-direction: column; 
-                padding:  12% 8%;
+			@media only screen and (min-width: $bp-tablet) {
+				flex-direction: row;
 
-                label {
-                    margin-top: 1.2rem;
-                }
+				#email-address {
+					flex: 1;
+					margin: 0 3rem;
+				}
+			}
 
-                #email-address {
-                    margin: 0;
-                }
-            }
-        }
+			@media only screen and (max-width: $bp-tablet) {
+				flex-direction: column;
+				padding: 12% 8%;
 
-        label, input, #btn-submit {
-            font-size: 1.6rem;
-            display: inline-block;
-            border-radius: 5px;
-        }
+				label {
+					margin-top: 1.2rem;
+				}
 
-        label, #btn-submit {
-            font-weight: bold;
-        }
+				#email-address {
+					margin: 0;
+				}
+			}
+		}
 
-        input, #btn-submit {
-            padding: 1.2rem 2rem;
-        }
+		label,
+		input,
+		#btn-submit {
+			font-size: 1.6rem;
+			display: inline-block;
+			border-radius: 5px;
+		}
 
-        &::placeholder {
-            font-size: 96%;
-        }
+		label,
+		#btn-submit {
+			font-weight: bold;
+		}
 
-        label {
-            padding: 1.4rem 0;
-            font-family: sans-serif;
-            font-size: 1.8rem !important;
+		input,
+		#btn-submit {
+			padding: 1.2rem 2rem;
+		}
 
-            @media only screen and (max-width: $bp-tablet) {
-                padding-bottom: 1.4rem;
-            }
-        }
+		&::placeholder {
+			font-size: 96%;
+		}
 
-        input {
-            background-color: #f0f0f0;
-            padding: 1rem 1.2rem;
-            border: 2px solid $color-smooth-red;
+		label {
+			padding: 1.4rem 0;
+			font-family: sans-serif;
+			font-size: 1.8rem !important;
 
-            &:focus {
-                background-color: #fff;
-            }
+			@media only screen and (max-width: $bp-tablet) {
+				padding-bottom: 1.4rem;
+			}
+		}
 
-            @media only screen and (max-width: $bp-tablet) {
-                margin-bottom: 2.4rem;
-            }
-        }
+		input {
+			background-color: #f0f0f0;
+			padding: 1rem 1.2rem;
+			border: 2px solid $color-smooth-red;
 
-        #btn-submit {
-            color: #fff;
-	        border: none;
-	        padding: 1.2rem 2.2rem;
-	        background-color: $color-smooth-red;
-            border-radius: 50px;
-            cursor: pointer;
-            
-            &:focus, 
-            &:hover { background-color: $color-smooth-purple-dark;}
+			&:focus {
+				background-color: #fff;
+			}
 
-            i { margin-left: 8px;}
+			@media only screen and (max-width: $bp-tablet) {
+				margin-bottom: 2.4rem;
+			}
+		}
 
-            @media only screen and (max-width: $bp-tablet) {
-                margin: 3rem auto 0 auto;
-                width: 80%;
-            }
-        }
+		#btn-submit {
+			color: #fff;
+			border: none;
+			padding: 1.2rem 2.2rem;
+			background-color: $color-smooth-red;
+			border-radius: 50px;
+			cursor: pointer;
 
-        @media only screen and (min-width: $bp-tablet) {
-            #email-address { flex: 1; margin: 0 3rem; }
-        }
+			&:focus,
+			&:hover {
+				background-color: $color-smooth-purple-dark;
+			}
 
-        @media only screen and (max-width: $bp-tablet) {
-            label {
-                margin-top: 1.2rem;
-            }
+			i {
+				margin-left: 8px;
+			}
 
-            #email-address {
-                margin: 0;
-            }
-        }
-    }
+			@media only screen and (max-width: $bp-tablet) {
+				margin: 3rem auto 0 auto;
+				width: 80%;
+			}
+		}
+
+		@media only screen and (min-width: $bp-tablet) {
+			#email-address {
+				flex: 1;
+				margin: 0 3rem;
+			}
+		}
+
+		@media only screen and (max-width: $bp-tablet) {
+			label {
+				margin-top: 1.2rem;
+			}
+
+			#email-address {
+				margin: 0;
+			}
+		}
+	}
 }
 
 // Sorfware Analytics Form
 .software-form-container {
-    background-color: $color-black;
-    padding: 10rem 0;
-    border-top: 1px solid $color-grey;
-    border-bottom: 1px solid $color-grey;
+	background-color: $color-white;
+	padding: 10rem 0;
+	border-top: 1px solid $color-grey;
+	border-bottom: 1px solid $color-grey;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 
-    .flex-row {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+	.flex-row {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
 
-        margin: 0 auto;
-        margin-top: 5rem;
-        max-width: 700px;
+		margin: 0 auto;
+		margin-top: 5rem;
+		max-width: 700px;
 
-        @media only screen and (min-width: $bp-tablet) {
-            flex-direction: row;
+		@media only screen and (min-width: $bp-tablet) {
+			flex-direction: row;
 
-            #email-address { flex: 1; margin: 0 3rem; }
-        }
+			#email-address {
+				flex: 1;
+				margin: 0 3rem;
+			}
+		}
 
-        @media only screen and (max-width: $bp-tablet) {
-            flex-direction: column; 
-            padding:  6% 8%;
-            margin: 0 auto;
+		@media only screen and (max-width: $bp-tablet) {
+			flex-direction: column;
+			padding: 6% 8%;
+			margin: 0 auto;
 
-            label {
-                margin-top: 1.2rem;
-            }
+			label {
+				margin-top: 1.2rem;
+			}
 
-            #email-address {
-                margin: 0;
-            }
-        }
-    }
+			#email-address {
+				margin: 0;
+			}
+		}
+	}
 
-    label, input, #btn-submit {
-        font-size: 1.6rem;
-        display: inline-block;
-        border-radius: 5px;
-    }
+	label,
+	input,
+	#btn-submit {
+		font-size: 1.6rem;
+		display: inline-block;
+		border-radius: 5px;
+	}
 
-    label, #btn-submit {
-        font-weight: bold;
-    }
+	label,
+	#btn-submit {
+		font-weight: bold;
+	}
 
-    input, #btn-submit {
-        padding: 1.2rem 2rem;
-    }
+	input,
+	#btn-submit {
+		padding: 1.2rem 2rem;
+	}
 
-    &::placeholder {
-        font-size: 96%;
-    }
+	&::placeholder {
+		font-size: 96%;
+	}
 
-    label {
-        color: $color-white;
-        padding: 1.4rem 0;
-        font-family: sans-serif;
-        font-size: 1.8rem !important;
-        @extend %alignCenter;
+	label {
+		color: $color-black;
+		padding: 1.4rem 0;
+		font-family: sans-serif;
+		font-size: 1.8rem !important;
+		@extend %alignCenter;
 
-        @media only screen and (max-width: $bp-tablet) {
-            padding-bottom: 1.4rem;
-        }
-    }
+		@media only screen and (max-width: $bp-tablet) {
+			padding-bottom: 1.4rem;
+		}
+	}
 
-    input {
-        background-color: #f0f0f0;
-        padding: 1rem 1.2rem;
-        border: 2px solid $color-software-green;
+	input {
+		background-color: #f0f0f0;
+		padding: 1rem 1.2rem;
+		border: 2px solid $color-software-green;
 
-        &:focus {
-            background-color: #fff;
-        }
+		&:focus {
+			background-color: #fff;
+		}
 
-        @media only screen and (max-width: $bp-tablet) {
-            margin-bottom: 2.4rem;
-        }
-    }
+		@media only screen and (max-width: $bp-tablet) {
+			margin-bottom: 2.4rem;
+		}
+	}
 
-    #btn-submit {
-        color: #fff;
-        border: 3px solid $color-software-green;
-        padding: 1.2rem 2.2rem;
-        background-color: $color-software-green;
-        border-radius: 50px;
-        cursor: pointer;
-        
-        &:focus, 
-        &:hover { 
-            background-color: $color-white;
-            color: $color-software-green;
-            border: 3px solid $color-software-green;
-        }
+	#btn-submit {
+		color: #fff;
+		border: 3px solid $color-software-green;
+		padding: 1.2rem 2.2rem;
+		background-color: $color-software-green;
+		border-radius: 50px;
+		cursor: pointer;
 
-        i { margin-left: 8px;}
+		&:focus,
+		&:hover {
+			background-color: $color-white;
+			color: $color-software-green;
+			border: 3px solid $color-software-green;
+		}
 
-        @media only screen and (max-width: $bp-tablet) {
-            margin: 3rem auto 0 auto;
-            width: 55%;
-        }
-    }
+		i {
+			margin-left: 8px;
+		}
 
-    @media only screen and (min-width: $bp-tablet) {
-        #email-address { flex: 1; margin: 0 3rem; }
-    }
+		@media only screen and (max-width: $bp-tablet) {
+			margin: 3rem auto 0 auto;
+			width: 55%;
+		}
+	}
 
-    @media only screen and (max-width: $bp-tablet) {
-        label {
-            margin-top: 1.2rem;
-        }
+	@media only screen and (min-width: $bp-tablet) {
+		#email-address {
+			flex: 1;
+			margin: 0 3rem;
+		}
+	}
 
-        #email-address {
-            margin: 0;
-        }
-    }
+	@media only screen and (max-width: $bp-tablet) {
+		label {
+			margin-top: 1.2rem;
+		}
+
+		#email-address {
+			margin: 0;
+		}
+	}
 }
 
-
 .travel-form-container {
+	.travel-form {
+		background-color: $color-white;
+		border: 1px solid $color-grey;
+		@extend %alignCenter;
 
-    .travel-form {
-        background-color: $color-white;
-        border: 1px solid $color-grey;
-        @extend %alignCenter;
+		@media only screen and (min-width: $bp-tablet) {
+			padding: 2% 4% 1% 4%;
+			margin: 0 23% 4% 23%;
+		}
 
-        @media only screen and (min-width: $bp-tablet) {
-            padding: 2% 4% 1% 4%;
-            margin: 0 23% 4% 23%;
-        }
-    
-        @media only screen and (max-width: $bp-tablet) {
-            padding: 7% 8% 8% 8%;
-            margin: 2% 8% 18% 8%;
-        }
+		@media only screen and (max-width: $bp-tablet) {
+			padding: 7% 8% 8% 8%;
+			margin: 2% 8% 18% 8%;
+		}
 
-        &__item {
-            display: flex;
-            justify-content: space-between;
-            text-align: left;
-            margin-bottom: 6%;
+		&__item {
+			display: flex;
+			justify-content: space-between;
+			text-align: left;
+			margin-bottom: 6%;
 
-            &__name {
-                width: 47%;
-                @extend %FlexCol;
+			&__name {
+				width: 47%;
+				@extend %FlexCol;
 
-                @media only screen and (max-width: 950px) {
-                    width: 75%;
-                }
-            }
+				@media only screen and (max-width: 950px) {
+					width: 75%;
+				}
+			}
 
-            &__email {
-                width: 47%;
-                @extend %FlexCol;
-                
-                @media only screen and (max-width: 950px) {
-                    width: 75%;
-                }
-            }
+			&__email {
+				width: 47%;
+				@extend %FlexCol;
 
-            &__textarea {
-                width: 64%;
-                @extend %FlexCol;
+				@media only screen and (max-width: 950px) {
+					width: 75%;
+				}
+			}
 
-                @media only screen and (max-width: 950px) {
-                    margin-bottom: 3rem;
-                    width: 100%;
-                }
-            }   
+			&__textarea {
+				width: 64%;
+				@extend %FlexCol;
 
-            &__btn {
-                align-self: flex-end;
-                text-align: center;
-                
-                #btn-submit {
-                    width: 100%;
-                    font-size: 135%;
-                    border: none;
-                    background-color: $color-travel-orange;
-                    color: $color-white;
-                    font-weight: bold;
-                    padding: 1.2rem 2.2rem;
-                    border-radius: 5px;
-                    cursor: pointer;
-                }
+				@media only screen and (max-width: 950px) {
+					margin-bottom: 3rem;
+					width: 100%;
+				}
+			}
 
-                i {
-                    margin-left: 1rem;
-                }
+			&__btn {
+				align-self: flex-end;
+				text-align: center;
 
-                @media only screen and (max-width: 950px) {
-                    align-self: center;
-                }
-            }
+				#btn-submit {
+					width: 100%;
+					font-size: 135%;
+					border: none;
+					background-color: $color-travel-orange;
+					color: $color-white;
+					font-weight: bold;
+					padding: 1.2rem 2.2rem;
+					border-radius: 5px;
+					cursor: pointer;
+				}
 
-            label {
-                font-size: 1.6rem;
-                font-weight: bold;
-                font-family: sans-serif;
-                margin-right: 1rem;
-                margin-bottom: 1rem;
-                align-items: baseline;
-            }
+				i {
+					margin-left: 1rem;
+				}
 
-            input {
-                @media only screen and (max-width: 950px) {
-                    margin-bottom: 3rem;
-                }
-            }
+				@media only screen and (max-width: 950px) {
+					align-self: center;
+				}
+			}
 
-            textarea {
-                
-            }
+			label {
+				font-size: 1.6rem;
+				font-weight: bold;
+				font-family: sans-serif;
+				margin-right: 1rem;
+				margin-bottom: 1rem;
+				align-items: baseline;
+			}
 
-            input, textarea {
-                font-size: 1.4rem;
-                padding: 1rem 1.2rem;
-                border: 2px solid $color-grey;
-                background-color: $color-white-dark-1;
-                border-radius: 5px;
+			input {
+				@media only screen and (max-width: 950px) {
+					margin-bottom: 3rem;
+				}
+			}
 
-                &::placeholder {
-                    font-size: 94%;
-                }
-            }
+			textarea {
+			}
 
-            @media only screen and (max-width: 950px) {
-                flex-direction: column;
-            }
-        }
-    }
+			input,
+			textarea {
+				font-size: 1.4rem;
+				padding: 1rem 1.2rem;
+				border: 2px solid $color-grey;
+				background-color: $color-white-dark-1;
+				border-radius: 5px;
+
+				&::placeholder {
+					font-size: 94%;
+				}
+			}
+
+			@media only screen and (max-width: 950px) {
+				flex-direction: column;
+			}
+		}
+	}
 }
 
 .web-form-container {
-    border: 2.5px solid $color-web-purple;
+	border: 2.5px solid $color-web-purple;
 
-    @media only screen and (min-width: $bp-tablet) {
-        padding: 2% 4% 1% 4%;
-        margin: 0 23% 4% 23%;
-    }
+	@media only screen and (min-width: $bp-tablet) {
+		padding: 2% 4% 1% 4%;
+		margin: 0 23% 4% 23%;
+	}
 
-    @media only screen and (max-width: $bp-tablet) {
-        padding: 7% 8% 8% 8%;
-        margin: 2% 8% 18% 8%;
-    }
+	@media only screen and (max-width: $bp-tablet) {
+		padding: 7% 8% 8% 8%;
+		margin: 2% 8% 18% 8%;
+	}
 
-    .web-form {
-        @extend %alignCenter;
-        margin: 4rem 0;
+	.web-form {
+		@extend %alignCenter;
+		margin: 4rem 0;
 
-        &__item {
-            display: flex;
-            justify-content: space-between;
-            text-align: left;
-            margin-bottom: 6%;
+		&__item {
+			display: flex;
+			justify-content: space-between;
+			text-align: left;
+			margin-bottom: 6%;
 
-            &__name {
-                width: 47%;
-                @extend %FlexCol;
+			&__name {
+				width: 47%;
+				@extend %FlexCol;
 
-                @media only screen and (max-width: 950px) {
-                    width: 75%;
-                }
-            }
+				@media only screen and (max-width: 950px) {
+					width: 75%;
+				}
+			}
 
-            &__email {
-                width: 47%;
-                @extend %FlexCol;
-                
-                @media only screen and (max-width: 950px) {
-                    width: 75%;
-                }
-            }
+			&__email {
+				width: 47%;
+				@extend %FlexCol;
 
-            &__textarea {
-                width: 64%;
-                @extend %FlexCol;
+				@media only screen and (max-width: 950px) {
+					width: 75%;
+				}
+			}
 
-                @media only screen and (max-width: 950px) {
-                    margin-bottom: 3rem;
-                    width: 100%;
-                }
-            }   
+			&__textarea {
+				width: 64%;
+				@extend %FlexCol;
 
-            &__btn {
-                align-self: flex-end;
-                text-align: center;
-                
-                #btn-submit {
-                    width: 100%;
-                    font-size: 135%;
-                    border: none;
-                    background-color: $color-web-purple;
-                    color: $color-white;
-                    font-weight: bold;
-                    padding: 1.2rem 2.2rem;
-                    border-radius: 5px;
-                    cursor: pointer;
-                }
+				@media only screen and (max-width: 950px) {
+					margin-bottom: 3rem;
+					width: 100%;
+				}
+			}
 
-                i {
-                    margin-left: 1rem;
-                }
+			&__btn {
+				align-self: flex-end;
+				text-align: center;
 
-                @media only screen and (max-width: 950px) {
-                    align-self: center;
-                }
-            }
+				#btn-submit {
+					width: 100%;
+					font-size: 135%;
+					border: none;
+					background-color: $color-web-purple;
+					color: $color-white;
+					font-weight: bold;
+					padding: 1.2rem 2.2rem;
+					border-radius: 5px;
+					cursor: pointer;
+				}
 
-            label {
-                font-size: 1.6rem;
-                font-weight: bold;
-                font-family: sans-serif;
-                margin-right: 1rem;
-                margin-bottom: 1rem;
-                align-items: baseline;
-            }
+				i {
+					margin-left: 1rem;
+				}
 
-            input {
-                @media only screen and (max-width: 950px) {
-                    margin-bottom: 3rem;
-                }
-            }
+				@media only screen and (max-width: 950px) {
+					align-self: center;
+				}
+			}
 
-            input, textarea {
-                font-size: 1.4rem;
-                padding: 1rem 1.2rem;
-                border: 2px solid $color-web-pink;
-                background-color: $color-white-dark-1;
-                border-radius: 5px;
+			label {
+				font-size: 1.6rem;
+				font-weight: bold;
+				font-family: sans-serif;
+				margin-right: 1rem;
+				margin-bottom: 1rem;
+				align-items: baseline;
+			}
 
-                &::placeholder {
-                    font-size: 94%;
-                }
-            }
+			input {
+				@media only screen and (max-width: 950px) {
+					margin-bottom: 3rem;
+				}
+			}
 
-            @media only screen and (max-width: 950px) {
-                flex-direction: column;
-            }
-        }
-    }
+			input,
+			textarea {
+				font-size: 1.4rem;
+				padding: 1rem 1.2rem;
+				border: 2px solid $color-web-pink;
+				background-color: $color-white-dark-1;
+				border-radius: 5px;
+
+				&::placeholder {
+					font-size: 94%;
+				}
+			}
+
+			@media only screen and (max-width: 950px) {
+				flex-direction: column;
+			}
+		}
+	}
 }

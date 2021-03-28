@@ -1028,13 +1028,17 @@ img {
           margin-top: 1.2rem; }
         .smooth__container-form-email-signup__flex-row #email-address {
           margin: 0; } }
-  .smooth__container-form-email-signup label, .smooth__container-form-email-signup input, .smooth__container-form-email-signup #btn-submit {
+  .smooth__container-form-email-signup label,
+  .smooth__container-form-email-signup input,
+  .smooth__container-form-email-signup #btn-submit {
     font-size: 1.6rem;
     display: inline-block;
     border-radius: 5px; }
-  .smooth__container-form-email-signup label, .smooth__container-form-email-signup #btn-submit {
+  .smooth__container-form-email-signup label,
+  .smooth__container-form-email-signup #btn-submit {
     font-weight: bold; }
-  .smooth__container-form-email-signup input, .smooth__container-form-email-signup #btn-submit {
+  .smooth__container-form-email-signup input,
+  .smooth__container-form-email-signup #btn-submit {
     padding: 1.2rem 2rem; }
   .smooth__container-form-email-signup::placeholder {
     font-size: 96%; }
@@ -1080,7 +1084,7 @@ img {
       margin: 0; } }
 
 .software-form-container {
-  background-color: #000;
+  background-color: #fff;
   padding: 10rem 0;
   border-top: 1px solid #808080;
   border-bottom: 1px solid #808080;
@@ -1109,18 +1113,22 @@ img {
           margin-top: 1.2rem; }
         .software-form-container .flex-row #email-address {
           margin: 0; } }
-  .software-form-container label, .software-form-container input, .software-form-container #btn-submit {
+  .software-form-container label,
+  .software-form-container input,
+  .software-form-container #btn-submit {
     font-size: 1.6rem;
     display: inline-block;
     border-radius: 5px; }
-  .software-form-container label, .software-form-container #btn-submit {
+  .software-form-container label,
+  .software-form-container #btn-submit {
     font-weight: bold; }
-  .software-form-container input, .software-form-container #btn-submit {
+  .software-form-container input,
+  .software-form-container #btn-submit {
     padding: 1.2rem 2rem; }
   .software-form-container::placeholder {
     font-size: 96%; }
   .software-form-container label {
-    color: #fff;
+    color: #000;
     padding: 1.4rem 0;
     font-family: sans-serif;
     font-size: 1.8rem !important; }
@@ -1223,13 +1231,15 @@ img {
     @media only screen and (max-width: 950px) {
       .travel-form-container .travel-form__item input {
         margin-bottom: 3rem; } }
-    .travel-form-container .travel-form__item input, .travel-form-container .travel-form__item textarea {
+    .travel-form-container .travel-form__item input,
+    .travel-form-container .travel-form__item textarea {
       font-size: 1.4rem;
       padding: 1rem 1.2rem;
       border: 2px solid #808080;
       background-color: #ececec;
       border-radius: 5px; }
-      .travel-form-container .travel-form__item input::placeholder, .travel-form-container .travel-form__item textarea::placeholder {
+      .travel-form-container .travel-form__item input::placeholder,
+      .travel-form-container .travel-form__item textarea::placeholder {
         font-size: 94%; }
     @media only screen and (max-width: 950px) {
       .travel-form-container .travel-form__item {
@@ -1296,13 +1306,15 @@ img {
       @media only screen and (max-width: 950px) {
         .web-form-container .web-form__item input {
           margin-bottom: 3rem; } }
-      .web-form-container .web-form__item input, .web-form-container .web-form__item textarea {
+      .web-form-container .web-form__item input,
+      .web-form-container .web-form__item textarea {
         font-size: 1.4rem;
         padding: 1rem 1.2rem;
         border: 2px solid #ff3366;
         background-color: #ececec;
         border-radius: 5px; }
-        .web-form-container .web-form__item input::placeholder, .web-form-container .web-form__item textarea::placeholder {
+        .web-form-container .web-form__item input::placeholder,
+        .web-form-container .web-form__item textarea::placeholder {
           font-size: 94%; }
       @media only screen and (max-width: 950px) {
         .web-form-container .web-form__item {
