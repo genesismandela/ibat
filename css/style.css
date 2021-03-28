@@ -2501,6 +2501,11 @@ a[href^=tel] {
     .contact__form::placeholder {
       font-family: "Montserrat", sans-serif; }
 
+.privacy {
+  padding: 0 5%;
+  margin: 15rem auto;
+  max-width: 950px; }
+
 .smoothies {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
