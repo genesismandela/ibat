@@ -326,12 +326,13 @@
 		}
 
 		&--link {
-			color: inherit;
-			text-decoration: none;
+			color: $color-home-red;
+			text-decoration: underline;
 
 			&:hover {
-				color: $color-home-red;
-				text-decoration: underline;
+				color: $color-home-grey;
+				text-decoration: none;
+				cursor: pointer;
 			}
 		}
 

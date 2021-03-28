@@ -358,6 +358,7 @@
 			border-radius: 5px;
 			margin: 2rem auto;
 			font-family: $font-web-agency;
+			border: none;
 		}
 
 		&__input {
@@ -390,8 +391,7 @@
 			background-color: $color-home-red;
 
 			&:active {
-				color: $color-home-white;
-				border: 1px solid $color-home-grey;
+				background-color: $color-home-white;
 			}
 		}
 
