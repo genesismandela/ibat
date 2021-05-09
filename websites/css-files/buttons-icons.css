@@ -1,0 +1,191 @@
+/* WEB BROWSER RESETS */
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Container for web page blocks */
+.container-block {
+	padding: 50px 18% 50px 18%;
+}
+/* Desktops */
+@media (min-width: 768px) {
+	.container-block {
+		padding: 4% 18%;
+	}
+}
+
+/* Mobiles */
+@media (max-width: 767px) {
+	.container-block {
+		padding: 12% 8%;
+	}
+}
+
+/* Main heading */
+.container-block h1 {
+	font-family: "Fira Sans", sans-serif;
+	font-size: calc(48px + (84 - 48) * ((100vw - 320px) / (1600 - 320)));
+	color: #1435b3;
+	letter-spacing: -3px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+/* Smaller headings */
+.container-block h2 {
+	font-family: "Fira Sans", sans-serif;
+	font-size: calc(22px + (28 - 22) * ((100vw - 320px) / (1600 - 320)));
+	color: #696969;
+	line-height: 1.6;
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+/* Smallest headings */
+.container-block h3 {
+	font-family: "Fira Sans", sans-serif;
+	font-size: calc(32px + (48 - 32) * ((100vw - 320px) / (1600 - 320)));
+	letter-spacing: -3px;
+	color: #000;
+	text-transform: uppercase;
+	margin-bottom: 12px;
+}
+
+/* Text paragraphs */
+.container-block p {
+	font-family: "Arvo", sans-serif;
+	font-size: calc(17px + (21 - 17) * ((100vw - 320px) / (1600 - 320)));
+	color: #2f4f4f;
+	line-height: 1.8;
+}
+/* Desktops */
+@media (min-width: 768px) {
+	.container-block p {
+		line-height: 1.8;
+	}
+}
+
+/* Mobiles */
+@media (max-width: 767px) {
+	.container-block p {
+		line-height: 1.6;
+	}
+}
+
+/* Last paragraph at bottom of container block */
+.container-block p:last-child {
+	margin-bottom: 0;
+}
+
+/* Images */
+.container-block img {
+	margin-bottom: 32px;
+}
+
+/* Coloured backgrounds */
+.bg-hero-block {
+	background-color: #35f9fb;
+}
+.bg-blue-light {
+	background-color: #d8f0f5;
+}
+
+/* Default gradient direction: top to bottom */
+.bg-blue-dark {
+	background-image: linear-gradient(#0575e6, #1435b3);
+}
+
+/* Light blue background: h3 sub-headings and p text paragraphs */
+.container-block.bg-blue-light h3 {
+	color: #1435b3;
+}
+.container-block.bg-blue-light p {
+	color: #000;
+}
+
+/* Dark blue background: h3 sub-headings and p text paragraphs */
+.container-block.bg-blue-dark h3 {
+	color: #fff;
+}
+.container-block.bg-blue-dark p {
+	color: #fff;
+}
+/* =============== BUTTONS AND ICONS ============== */
+/* All buttons */
+span {
+	display: block;
+}
+.btn {
+	font-family: sans-serif;
+	text-decoration: none;
+	padding: 14px 26px;
+	font-size: 18px;
+	font-weight: bold;
+	/* text-transform: uppercase; 
+  letter-spacing: 1px;
+  word-spacing: 102%; */
+}
+
+/* Solid buttons */
+.btn-solid:link,
+.btn-solid:visited {
+	background-color: blue;
+	color: #fff;
+}
+
+.btn-solid:focus,
+.btn-solid:hover,
+.btn-solid:active {
+	background-color: darkblue;
+	color: #fff;
+}
+
+/* Gradient buttons */
+.btn-gradient:link,
+.btn-gradient:visited {
+	background-image: linear-gradient(90deg, #e052a0, #f15c41);
+	color: #fff;
+}
+
+.btn-gradient:focus,
+.btn-gradient:hover,
+.btn-gradient:active {
+	background-image: linear-gradient(to right, #3ec7e0, #526bf4);
+	color: #fff;
+}
+
+/* Ghost buttons */
+.btn-ghost:link,
+.btn-ghost:visited {
+	border: solid 2px #000;
+	color: #000;
+	background-color: transparent;
+	padding: 12px 24px;
+}
+
+.btn-ghost:focus,
+.btn-ghost:hover,
+.btn-ghost:active {
+	border: solid 2px blue;
+	color: blue;
+	background-color: transparent;
+	padding: 12px 24px;
+}
